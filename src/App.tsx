@@ -3,9 +3,9 @@ import ScrollTop from './components/ScrollTop';
 
 const App = () => {
   return (
-    <ScrollTop>
-        <Routes />
-    </ScrollTop>
+      <ScrollTop>
+          <Routes />
+      </ScrollTop>
   )
 }
 
