@@ -8,8 +8,8 @@ const Record = {
             roundtrip: true,
             outbound: 'Tiger Air Inc.航班 IT258 臺北市 TPE 09月09日-12:15(GMT+8) --> 花卷 HNA 09月09日-16:50(GMT+9) (臺北)桃園機場第一航廈',
             return: 'Tiger Air Inc.航班 IT259 花卷 HNA 09月13日-17:50(GMT+9) --> 臺北市 TPE 09月13日-21:00(GMT+8) (日本)花卷機場',
-            outbound_amount: '17247',
-            return_amount: '9051',
+            outbound_amount: 17247,
+            return_amount: 9051,
             luggage: '單程20公斤(*3)'
         }
     ],

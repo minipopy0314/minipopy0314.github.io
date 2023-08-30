@@ -7,7 +7,8 @@ import {
     MenuList, 
     MenuItem,
     ListItemText,
-    ListItemIcon
+    ListItemIcon,
+    Divider
 } from "@mui/material"
 
 import menuList from "./MenuList";
@@ -17,7 +18,7 @@ const MenuData = menuList.map((item, i) => {
         return (
             <Grid key={i} marginBottom={'10px'}>
                 <Typography variant="h5">{item.country}</Typography>
-                <hr></hr>
+                <Divider />
                 <MenuList>
                     {
                         item.record.map((log, j) => {
@@ -49,7 +50,7 @@ const MenuData = menuList.map((item, i) => {
 const index = () => {
   return (
     <Grid container>
-        <Grid xs={12}>
+        <Grid item xs={12}>
             {MenuData}
         </Grid>
     </Grid>

@@ -2,153 +2,137 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useLocation, useParams } from "react-router";
 
-import { Button, Typography } from "@mui/material";
+import { Button, Divider, Grid, Typography } from "@mui/material";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
+import AirplaneInfo from "./AirplaneInfo";
+import LodgingInfo from "./LodgingInfo";
+import JourneyInfo from "./JourneyInfo";
+import Summary from "./Summary";
+
+import data201408 from '../records/201408-tokyo'
+import data201608 from '../records/201608-osaka'
+import data201704 from '../records/201704-tokyo'
+import data201709 from '../records/201709-okayama'
+import data201801 from '../records/201801-yamagata'
+import data201804 from '../records/201804-okayama'
+import data201810 from '../records/201810-tokyo'
+import data201909 from '../records/201909-nagano'
+import data201912 from '../records/201912-kyoto'
+import data202211 from '../records/202211-japan'
+import data202212 from '../records/202212-tokyo'
+import data202304 from '../records/202304-kyoto'
+import data202306 from '../records/202306-okinawa'
 import data202309 from '../records/202309-hokkaido'
+import data202402 from '../records/202402-kyushu'
 
 const index = () => {
   const params = useParams()
-  console.log(params, 'params')
 
-  const inputData = data202309;
+  let inputData = null;
+  switch(params.time){
+    case '201408-tokyo':
+      inputData = data201408;
+      break;
+    case '201608-osaka':
+      inputData = data201608;
+      break;
+    case '201704-tokyo':
+      inputData = data201704;
+      break;
+    case '201709-okayama':
+      inputData = data201709;
+      break;
+    case '201801-yamagata':
+      inputData = data201801;
+      break;
+    case '201804-okayama':
+      inputData = data201804;
+      break;
+    case '201810-tokyo':
+      inputData = data201810;
+      break;
+    case '201909-nagano':
+      inputData = data201909;
+      break;
+    case '201912-kyoto':
+      inputData = data201912;
+      break;
+    case '202211-japan':
+      inputData = data202211;
+      break;
+    case '202212-tokyo':
+      inputData = data202212;
+      break;
+    case '202304-kyoto':
+      inputData = data202304;
+      break;
+    case '202306-okinawa':
+      inputData = data202306;
+      break;
+    case '202309-hokkaido':
+      inputData = data202309;
+      break;
+    case '202402-kyushu':
+      inputData = data202402;
+      break;
+  }
 
   return (
     <main>
-      <section className="index-title">
-        <div className="container">
-          <div className="row">
-            <Button variant="contained" onClick={() => {
-              window.location.href = '/';
-            }}>返回</Button>
-            <div className="col s12 center-align">
-                <Typography variant="h4">{inputData.title}</Typography>
-                <hr/>
-                <p style={{fontSize: '1.2rem'}}>
-                  {inputData.date}
-                </p>
-                <h5>地區 : {inputData.location}</h5>
-            </div>
-            <div className="col s12">
-            {
-              inputData.airplane.map((plane) => {
-                return (
-                  <>
-                    <h5>機票</h5>
-                    <p>{plane.company}</p>
-                    <hr/>
-                    <ul>
-                        <li>去程 : {plane.outbound}</li>
-                        <li>回程 : {plane.return}</li>
-                        <li>去程金額: {plane.outbound_amount} 新台幣 </li>
-                        <li>回程金額: {plane.return_amount} 新台幣 </li>
-                        <li>合計金額: 
-                        {
-                          Number(plane.outbound_amount) + Number(plane.return_amount)
-                        } 新台幣</li>
-                        <li>托運行李: {plane.luggage}</li>
-                    </ul>
-                    <br/><br/><br/>
-                  </>
-                )
-              })
-            }
-            {
-              inputData.lodging.map((hotel) => {
-                return(
-                  <>
-                    <h5>住宿</h5>
-                    <p>{hotel.name}</p>
-                    <hr/>
-                    <ul>
-                        <li>住址: {hotel.address}</li>
-                        <li>TEL : {hotel.tel}</li>
-                        <li>地圖: {hotel.google_map}</li>
-                    </ul>
-                    {
-                      hotel.room.map((room) => {
-                        return(
-                          <div className="row" style={{margin: '0px'}}>
-                            <div className="col s12 m6 no-padding">
-                                <ul>
-                                    <li>預訂號碼: {room.order_no}</li>
-                                    <li>住宿日期: {room.day}</li>
-                                    <li>房間類型/住宿計劃: {room.room_type}</li>
-                                    <li>利用人數(一個房間): {room.user} 人</li>
-                                </ul>
-                            </div>
-                          </div>
-                        )
-                      })
-                    }
-                    <p className="red-text">合計金額: {hotel.amount}</p>
-                    <br/><br/><br/><br/>
-                  </>
-                )
-              })
-            }
-              <h5>花費</h5>
-              <hr/>
-              <p className="red-text">*平均一人</p>
-              <ul>
-                  <li>基本開銷(交通、票券) : 日圓 匯率0.23 約 新台幣</li>
-                  <li>食 :  日圓/人 (預估一日3000日圓) 匯率0.23 約  新台幣/人</li>
-                  <li>住 : </li>
-                  <li>雜 : 日圓/人 匯率0.23 約 新台幣/人</li>
-              </ul>
-              <p className="red-text">小計: 日元 (匯率0.23 約 新台幣)</p>
-              <br/><br/><br/>
-
-              <h5>行程</h5>
-              <p></p>
-              <hr/>
-            </div>
-          </div>
-        </div>
-      </section>
-    {
-      inputData.journey.map((day) => {
-        return(
-          <section className="index-title">
-              <div className="container">
-                  <div className="row">
-                      <div className="col s12">
-                          <h2>{day.date}</h2>
-                          <h5>{day.title}</h5>
-                          <p>花費</p>
-                          <ol>
-                            {
-                              day.pay.map((p) => {
-                                return(
-                                  <li>{p}</li>
-                                )
-                              })
-                            }
-                          </ol>
-                          <hr/>
-                          <ul className="timeline">
-                            {
-                              day.log.map((item) => {
-                                return(
-                                  <li className="event" data-date={item.time}>
-                                      <h3>{item.title}</h3>
-                                      <p>{item.detail}</p>
-                                      {
-                                        item.url ? (
-                                          <a href={item.url}>連結</a>
-                                        ) : ('')
-                                      }
-                                  </li>
-                                )
-                              })
-                            }
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </section>
-        )
-      })
-    }
+      <Grid container>
+        <Grid item xs={12} marginBottom={'3rem'}>
+          <Button variant="contained" onClick={() => {
+          window.location.href = '/';}}>
+            <ArrowBackIosIcon></ArrowBackIosIcon>返回
+          </Button>
+        </Grid>
+        <Grid item xs={12} textAlign={'center'}>
+          <Typography variant="h4">{inputData.title}</Typography>
+          <Divider />
+          <p style={{fontSize: '1.2rem'}}>
+            {inputData.date}
+          </p>
+          <Typography variant="h5">地區 : {inputData.location}</Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography variant="h5">機票</Typography>
+          {
+            inputData.airplane &&
+            inputData.airplane.map((plane, i) => {
+              return (
+                <AirplaneInfo key={`airplane${i}`} plane={plane} />
+              )
+            })
+          }
+        </Grid>
+        <Grid item xs={12}>
+          <Typography variant="h5">住宿</Typography>
+          {
+            inputData.lodging &&
+            inputData.lodging.map((hotel, i) => {
+              return(
+                <LodgingInfo key={`lodging${i}`} hotel={hotel} />
+              )
+            })
+          }
+        </Grid>
+        <Summary data={inputData} />
+        <Grid item xs={12}>
+          <Typography variant="h5">行程</Typography>
+          <Divider />
+          <br></br>
+          <br></br>
+          {
+            inputData.journey &&
+            inputData.journey.map((day, i) => {
+              return(
+                <JourneyInfo key={`journey${i}`} day={day} />
+              )
+            })
+          }
+        </Grid>
+      </Grid>
     </main>
   );
 };

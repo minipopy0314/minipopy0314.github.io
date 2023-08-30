@@ -8,6 +8,7 @@
     "predeploy": "npm run build && cp '.nojekyll' 'dist/.nojekyll'",
     "deploy": "gh-pages -d dist -t true",
     "dev": "vite",
+    "prod": "vite --mode production",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -15,7 +16,8 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.14.6",
+    "@mui/icons-material": "^5.14.7",
+    "@mui/material": "^5.14.7",
     "gh-pages": "^6.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
