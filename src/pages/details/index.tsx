@@ -17,7 +17,9 @@ const index = () => {
       <section className="index-title">
         <div className="container">
           <div className="row">
-            <Button variant="contained">返回</Button>
+            <Button variant="contained" onClick={() => {
+              window.location.href = '/';
+            }}>返回</Button>
             <div className="col s12 center-align">
                 <Typography variant="h4">{inputData.title}</Typography>
                 <hr/>
