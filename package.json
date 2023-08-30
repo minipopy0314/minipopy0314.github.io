@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build && @powershell copy '.nojekyll' 'dist/.nojekyll'",
+    "predeploy": "npm run build && cp '.nojekyll' 'dist/.nojekyll'",
     "deploy": "gh-pages -d dist -t true",
     "dev": "vite",
     "build": "tsc && vite build",
