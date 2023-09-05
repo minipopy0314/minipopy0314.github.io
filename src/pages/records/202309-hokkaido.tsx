@@ -209,12 +209,6 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: '午餐',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time:'',
                     title: '札幌駅',
                     detail: '',
                     url: ''
@@ -228,14 +222,14 @@ const Record = {
                 {
                     time:'',
                     title: '札幌散策',
-                    detail: '',
+                    detail: '薄野站步行至札幌站',
                     url: ''
                 },
                 {
                     time:'',
                     title: '晚餐',
-                    detail: '',
-                    url: ''
+                    detail: '牛たん炭焼 利久 赤れんが テラス店',
+                    url: 'https://goo.gl/maps/A12JBNkT7xpmCSY49'
                 },
                 {
                     time:'',
@@ -247,7 +241,7 @@ const Record = {
         },
         {
             date: '9/12',
-            title: '札幌',
+            title: '札幌 北海道神宮 白色戀人觀光工廠',
             pay: [
             ],
             log: [
@@ -259,19 +253,19 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: '札幌散策',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: '白色戀人觀光工廠',
+                    title: '北海道神宮',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
                     title: '午餐',
+                    detail: 'とんかつ 檍 炸豬排 大通店',
+                    url: 'https://goo.gl/maps/Va15CsfYSKrAgANR8'
+                },
+                {
+                    time:'',
+                    title: '白色戀人觀光工廠',
                     detail: '',
                     url: ''
                 },
@@ -297,32 +291,26 @@ const Record = {
         },
         {
             date: '9/13',
-            title: '札幌 北海道神宮',
+            title: '札幌 場外市場',
             pay: [
             ],
             log: [
                 {
                     time:'6:00',
                     title: 'Check out 札幌薄野永安國際酒店',
-                    detail: '行李寄存',
+                    detail: '',
                     url: ''
                 },
                 {
                     time:'7:00',
-                    title: '北海道神宮',
+                    title: '札幌場外市場',
                     detail: '',
                     url: ''
                 },
                 {
-                    time:'10:00',
-                    title: '早午餐',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time:'12:45',
+                    time:'11:45',
                     title: '札幌新千歲空港',
-                    detail: '',
+                    detail: '注意時間 需一小時前出發至機場',
                     url: ''
                 },
                 {

@@ -268,13 +268,9 @@
                             <h3>函館駅</h3>
                             <p>至札幌</p>
                         </li>
-                        <li class="event" data-date="11:00">
-                            <h3>中餐</h3>
-                            <p>車上隨意解決</p>
-                        </li>
                         <li class="event" data-date="15:00">
                             <h3>札幌駅</h3>
-                            <p>至札幌</p>
+                            <p></p>
                         </li>
                         <li class="event" data-date="15:00">
                             <h3>Check in 札幌薄野永安國際酒店</h3>
@@ -282,11 +278,11 @@
                         </li>
                         <li class="event" data-date="16:00">
                             <h3>札幌散策</h3>
-                            <p></p>
+                            <p>薄野站步行至札幌站</p>
                         </li>
                         <li class="event" data-date="18:00">
                             <h3>晚餐</h3>
-                            <p></p>
+                            <p>牛たん炭焼 利久 赤れんが テラス店</p>
                         </li>
                         <li class="event" data-date="21:00">
                             <h3>宿 札幌薄野永安國際酒店</h3>
@@ -303,7 +299,7 @@
             <div class="row">
                 <div class="col s12">
                     <h2>9/12</h2>
-                    <h5>札幌</h5>
+                    <h5>札幌 北海道神宮 白色戀人觀光工廠</h5>
                     <p>花費</p>
                     <ol>
                         <li></li>
@@ -315,12 +311,12 @@
                             <p>隨便吃</p>
                         </li>
                         <li class="event" data-date="7:00">
-                            <h3>札幌散策</h3>
+                            <h3>北海道神宮</h3>
                             <p></p>
                         </li>
                         <li class="event" data-date="7:00">
                             <h3>中餐</h3>
-                            <p></p>
+                            <p>とんかつ 檍 炸豬排 大通店</p>
                         </li>
                         <li class="event" data-date="7:00">
                             <h3>白色戀人觀光工廠</h3>
@@ -349,7 +345,7 @@
             <div class="row">
                 <div class="col s12">
                     <h2>9/13</h2>
-                    <h5>札幌 北海道神宮</h5>
+                    <h5>札幌 場外市場</h5>
                     <p>花費</p>
                     <ol>
                         <li></li>
@@ -358,17 +354,13 @@
                     <ul class="timeline">
                         <li class="event" data-date="6:00">
                             <h3>Check out 札幌薄野永安國際酒店</h3>
-                            <p>行李寄存</p>
+                            <p></p>
                         </li>
                         <li class="event" data-date="7:00">
-                            <h3>北海道神宮</h3>
+                            <h3>札幌場外市場</h3>
                             <p></p>
                         </li>
-                        <li class="event" data-date="10:00">
-                            <h3>早午餐</h3>
-                            <p></p>
-                        </li>
-                        <li class="event" data-date="12:45">
+                        <li class="event" data-date="11:45">
                             <h3>札幌新千歲空港</h3>
                             <p></p>
                         </li>
