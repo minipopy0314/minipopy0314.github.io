@@ -6,8 +6,8 @@ const Record = {
         {
             company: '中華航空 China Airlines Inc.',
             roundtrip: true,
-            outbound: 'China Airlines Inc.航班 CI116 臺北市 TPE 02月13日-16:30(GMT+8) --> 福岡 FUK 02月13日-19:35(GMT+9) (臺北)桃園機場第2航廈',
-            return: 'China Airlines Inc.航班 CI117 福岡 FUK 02月25日-20:35(GMT+9) --> 臺北市 TPE 02月25日-22:20(GMT+8) (日本)福岡機場第1航廈',
+            outbound: 'China Airlines 航班 CI116 臺北市 TPE 02月13日-16:30(GMT+8) --> 福岡 FUK 02月13日-19:35(GMT+9) (臺北)桃園機場第2航廈',
+            return: 'China Airlines 航班 CI117 福岡 FUK 02月25日-20:35(GMT+9) --> 臺北市 TPE 02月25日-22:20(GMT+8) (日本)福岡機場第1航廈',
             outbound_amount: 37665,
             return_amount: 0,
             luggage: '單程23公斤(*3)'
@@ -131,6 +131,12 @@ const Record = {
                     detail: '',
                     url: ''
                 },
+                {
+                    time:'21:00',
+                    title: '宿 Hotel La Foresta',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
@@ -138,8 +144,56 @@ const Record = {
             title: '觀光列車由布院之森、由布院溫泉',
             log: [
                 {
+                    time: '7:00',
+                    title: '早餐',
+                    detail: '隨意解決',
+                    url: ''
+                },
+                {
                     time: '',
-                    title: '',
+                    title: '博多駅',
+                    detail: '搭乘由布院之森觀光列車',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '由布院駅',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '午餐',
+                    detail: 'Siesta Organic Cafe',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '由布院散策',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '別府駅',
+                    detail: '由布院搭乘路線巴士',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: 'Check in Super Hotel Beppu Ekimae',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '晚餐',
+                    detail: '天婦羅 とよ常',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Super Hotel Beppu Ekimae',
                     detail: '',
                     url: ''
                 }
@@ -150,8 +204,26 @@ const Record = {
             title: '別府地獄溫泉',
             log: [
                 {
+                    time: '8:00',
+                    title: '早餐',
+                    detail: '旅館提供',
+                    url: ''
+                },
+                {
+                    time: '12:00',
+                    title: '午餐',
+                    detail: 'ェンマ緣',
+                    url: ''
+                },
+                {
+                    time: '18:00',
+                    title: '晚餐',
+                    detail: 'ろばた焼き仁',
+                    url: ''
+                },
+                {
                     time: '',
-                    title: '',
+                    title: '宿 Super Hotel Beppu Ekimae',
                     detail: '',
                     url: ''
                 }
@@ -162,8 +234,50 @@ const Record = {
             title: '黑川溫泉',
             log: [
                 {
-                    time: '',
-                    title: '',
+                    time: '7:00',
+                    title: '早餐',
+                    detail: '旅館提供',
+                    url: ''
+                },
+                {
+                    time: '8:00',
+                    title: '別府駅',
+                    detail: '巴士站搭乘九州橫斷巴士(需預約)至黑川溫泉巴士站',
+                    url: ''
+                },
+                {
+                    time: '10:00',
+                    title: '黑川溫泉巴士站',
+                    detail: '由宿泊業者接駁至旅客中心並寄運行李',
+                    url: ''
+                },
+                {
+                    time: '11:00',
+                    title: '黑川溫泉散策',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '12:00',
+                    title: '午餐',
+                    detail: '｢山のいぶき｣自然薯料理やまたけ',
+                    url: ''
+                },
+                {
+                    time: '15:00',
+                    title: 'Check in 黑川溫泉 山河',
+                    detail: '由宿泊業者於旅客中心接駁至旅館',
+                    url: ''
+                },
+                {
+                    time: '18:00',
+                    title: '晚餐',
+                    detail: '旅館提供',
+                    url: ''
+                },
+                {
+                    time: '20:00',
+                    title: '宿 黑川溫泉 山河',
                     detail: '',
                     url: ''
                 }
@@ -174,8 +288,44 @@ const Record = {
             title: '熊本',
             log: [
                 {
+                    time: '8:00',
+                    title: '早餐',
+                    detail: '旅館提供',
+                    url: ''
+                },
+                {
+                    time: '10:00',
+                    title: '黑川溫泉巴士站',
+                    detail: '由宿泊業者接駁至黑川溫泉巴士站',
+                    url: ''
+                },
+                {
+                    time: '11:00',
+                    title: '熊本駅',
+                    detail: '搭乘九州橫斷巴士至熊本',
+                    url: ''
+                },
+                {
+                    time: '13:00',
+                    title: '熊本散策',
+                    detail: '',
+                    url: ''
+                },
+                {
                     time: '',
-                    title: '',
+                    title: 'Check in FAV HOTEL KUMAMOTO',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '晚餐',
+                    detail: '自行解決',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 FAV HOTEL KUMAMOTO',
                     detail: '',
                     url: ''
                 }
@@ -187,7 +337,13 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: '',
+                    title: '晚餐',
+                    detail: '自行解決',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 FAV HOTEL KUMAMOTO',
                     detail: '',
                     url: ''
                 }
@@ -199,7 +355,13 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: '',
+                    title: '晚餐',
+                    detail: '自行解決',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 FAV HOTEL KUMAMOTO',
                     detail: '',
                     url: ''
                 }
@@ -211,7 +373,13 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: '',
+                    title: '晚餐',
+                    detail: '自行解決',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 FAV HOTEL KUMAMOTO',
                     detail: '',
                     url: ''
                 }
@@ -223,7 +391,19 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: '',
+                    title: '午餐',
+                    detail: 'Nobister',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: 'Check in Saga International GuestHouse Hagakure',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Saga International GuestHouse Hagakure',
                     detail: '',
                     url: ''
                 }
@@ -235,7 +415,7 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: '',
+                    title: '宿 Saga International GuestHouse Hagakure',
                     detail: '',
                     url: ''
                 }
@@ -247,7 +427,13 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: '',
+                    title: 'Check in Guest House Yasuragi Hakata Station Side',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Guest House Yasuragi Hakata Station Side',
                     detail: '',
                     url: ''
                 }
@@ -259,7 +445,25 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: '',
+                    title: '早餐',
+                    detail: '隨意解決',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '高千穗峽、宮崎(一日遊)',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '晚餐',
+                    detail: 'Evah Dining Macrobiotic Cafe',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Guest House Yasuragi Hakata Station Side',
                     detail: '',
                     url: ''
                 }
@@ -270,9 +474,21 @@ const Record = {
             title: '福岡',
             log: [
                 {
-                    time: '',
-                    title: '',
+                    time: '12:00',
+                    title: '午餐',
+                    detail: 'ブーゴロALL VEGAN',
+                    url: ''
+                },
+                {
+                    time: '18:30',
+                    title: '福岡空港',
                     detail: '',
+                    url: ''
+                },
+                {
+                    time: '20:35',
+                    title: '賦歸',
+                    detail: '回程 China Airlines CI117 22:20(GMT+8) 抵達 桃園機場',
                     url: ''
                 }
             ]
