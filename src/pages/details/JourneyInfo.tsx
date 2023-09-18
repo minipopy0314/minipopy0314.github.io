@@ -19,14 +19,18 @@ const JourneyInfo = ({ day }) => {
         <Grid item xs={12}>
             <Typography variant="h2">{day.date}</Typography>
             <Typography variant="h5">{day.title}</Typography>
-            <p>花費</p>
+            {
+                day.pay ? (
+                    <p>固定花費 :</p>
+                ) : ('')
+            }
             <ol>
             {
                 day.pay && 
                 day.pay.map((p, i) => {
-                return(
-                    <li key={i}>{p}</li>
-                )
+                    return(
+                        <li key={i}>{p}</li>
+                    )
                 })
             }
             </ol>
