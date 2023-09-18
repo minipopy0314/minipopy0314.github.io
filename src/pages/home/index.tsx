@@ -1,13 +1,8 @@
-import React, { startTransition } from "react";
-import { useState, useEffect } from "react";
-
 import { 
     Grid, 
     Typography, 
     MenuList, 
     MenuItem,
-    ListItemText,
-    ListItemIcon,
     Divider
 } from "@mui/material"
 
@@ -26,9 +21,9 @@ const MenuData = menuList.map((item, i) => {
                                 <MenuItem key={j}>
                                     {
                                         log.url ? (
-                                            <a className="collection-item" href={`/japan/${log.url}`}>
+                                            <Link className="collection-item" to={`/japan/${log.url}`}>
                                                 {log.date} {log.title}
-                                            </a>
+                                            </Link>
                                         ) : (
                                             <a className="collection-item" href="#" style={{color: '#aaa'}}>
                                                 {log.date} {log.title}-計畫中

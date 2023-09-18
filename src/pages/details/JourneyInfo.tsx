@@ -1,44 +1,48 @@
 import { Divider, Grid, Typography } from "@mui/material";
 
-const DayLog = ({ item }) => (
-    <li className="event" data-date={item.time}>
-        <Typography variant="h3">{item.title}</Typography>
-        <p>{item.detail}</p>
-        {
-            item.url ? (
-                <a href={item.url}>連結</a>
-            ) : ('')
-        }
-    </li>
-)
+const DayLog = ({ item }) => {
+    return (
+        <li className="event" data-date={item.time}>
+            <Typography variant="h3">{item.title}</Typography>
+            <p>{item.detail}</p>
+            {
+                item.url ? (
+                    <a href={item.url}>連結</a>
+                ) : ('')
+            }
+        </li>
+    )
+}
 
-const JourneyInfo = ({ day }) => (
-    <Grid item xs={12}>
-        <Typography variant="h2">{day.date}</Typography>
-        <Typography variant="h5">{day.title}</Typography>
-        <p>花費</p>
-        <ol>
-        {
-            day.pay && 
-            day.pay.map((p, i) => {
-            return(
-                <li key={i}>{p}</li>
-            )
-            })
-        }
-        </ol>
-        <Divider />
-        <ul className="timeline">
-        {
-            day.log &&
-            day.log.map((item, j) => {
+const JourneyInfo = ({ day }) => {
+    return (
+        <Grid item xs={12}>
+            <Typography variant="h2">{day.date}</Typography>
+            <Typography variant="h5">{day.title}</Typography>
+            <p>花費</p>
+            <ol>
+            {
+                day.pay && 
+                day.pay.map((p, i) => {
                 return(
-                    <DayLog key={j} item={item} />
+                    <li key={i}>{p}</li>
                 )
-            })
-        }
-        </ul>
-    </Grid>
-);
+                })
+            }
+            </ol>
+            <Divider />
+            <ul className="timeline">
+            {
+                day.log &&
+                day.log.map((item, j) => {
+                    return(
+                        <DayLog key={j} item={item} />
+                    )
+                })
+            }
+            </ul>
+        </Grid>
+    )
+};
 
 export default JourneyInfo;
