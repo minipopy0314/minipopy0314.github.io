@@ -106,8 +106,8 @@
               </a>
             </li>
             <li>
-              <a class="collection-item" href="<?php echo site_url("travel/202402-aomori");?>">
-                2024.02 日本東北地方自由行(秋田、岩手、青森、盛岡)-計畫中
+              <a class="collection-item" href="<?php echo site_url("travel/202402-kyushu");?>">
+                2024.02 日本九州地方自由行(福岡、大分、鹿兒島、宮崎、熊本)
               </a>
             </li>
             <li>
@@ -117,7 +117,7 @@
             </li>
             <li>
               <a class="collection-item" href="#" style="color:#aaa;">
-                日本九州地方自由行(福岡、佐賀、大分、鹿兒島、宮崎、熊本)-計畫中
+                日本東北地方自由行(秋田、岩手、青森、盛岡)-計畫中
               </a>
             </li>
             <li>
