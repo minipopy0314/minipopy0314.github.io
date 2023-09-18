@@ -26,6 +26,8 @@ import data202306 from '../records/202306-okinawa'
 import data202309 from '../records/202309-hokkaido'
 import data202402 from '../records/202402-kyushu'
 
+import data202405 from '../records/202405-swiss'
+
 const index = () => {
   const params = useParams()
 
@@ -76,7 +78,14 @@ const index = () => {
     case '202402-kyushu':
       inputData = data202402;
       break;
+    case '202405-swiss':
+      inputData = data202405;
+      break;
   }
+
+  useEffect(() => {
+    document.title = inputData.title ? inputData.title : 'no Title';
+  }, [])
 
   return (
     <main>

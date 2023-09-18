@@ -21,7 +21,7 @@ const MenuData = menuList.map((item, i) => {
                                 <MenuItem key={j}>
                                     {
                                         log.url ? (
-                                            <Link className="collection-item" to={`/japan/${log.url}`}>
+                                            <Link className="collection-item" to={`${log.url}`}>
                                                 {log.date} {log.title}
                                             </Link>
                                         ) : (
