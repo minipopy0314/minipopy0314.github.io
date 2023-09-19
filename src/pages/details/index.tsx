@@ -83,7 +83,7 @@ const index = () => {
   }
 
   return (
-    <main>
+    <>
       <Helmet>
           <title>{inputData.title}</title>
       </Helmet>
@@ -140,7 +140,7 @@ const index = () => {
           }
         </Grid>
       </Grid>
-    </main>
+    </>
   );
 };
 

@@ -1,3 +1,4 @@
+import {Helmet} from "react-helmet";
 import { 
     Grid, 
     Typography, 
@@ -44,11 +45,16 @@ const MenuData = menuList.map((item, i) => {
 
 const index = () => {
   return (
-    <Grid container>
-        <Grid item xs={12}>
-            {MenuData}
+    <>
+        <Helmet>
+          <title>Travel Log</title>
+        </Helmet>
+        <Grid container>
+            <Grid item xs={12}>
+                {MenuData}
+            </Grid>
         </Grid>
-    </Grid>
+    </>
   );
 };
 
