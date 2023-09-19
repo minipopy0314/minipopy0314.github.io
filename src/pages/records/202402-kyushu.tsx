@@ -648,14 +648,20 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: '大埔天主堂、哥拉巴園',
+                    title: '原爆資料館、和平公園',
                     detail: '',
                     url: ''
                 },
                 {
                     time: '',
-                    title: '原爆資料館、和平公園',
-                    detail: '',
+                    title: '大埔天主堂、哥拉巴園',
+                    detail: '約一小時左右',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '出島、長崎港',
+                    detail: '傍晚前往即可',
                     url: ''
                 },
                 {
