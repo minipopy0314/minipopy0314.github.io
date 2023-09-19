@@ -1,9 +1,8 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import { useLocation, useParams } from "react-router";
+import { useParams } from "react-router";
 
 import { Button, Divider, Grid, Typography } from "@mui/material";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import {Helmet} from "react-helmet";
 
 import AirplaneInfo from "./AirplaneInfo";
 import LodgingInfo from "./LodgingInfo";
@@ -83,12 +82,11 @@ const index = () => {
       break;
   }
 
-  useEffect(() => {
-    document.title = inputData.title ? inputData.title : 'no Title';
-  }, [])
-
   return (
     <main>
+      <Helmet>
+          <title>{inputData.title}</title>
+      </Helmet>
       <Grid container>
         <Grid item xs={12} marginBottom={'3rem'}>
           <Button variant="contained" onClick={() => {

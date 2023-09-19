@@ -18,7 +18,7 @@ const MenuData = menuList.map((item, i) => {
                     {
                         item.record.map((log, j) => {
                             return(
-                                <MenuItem key={j}>
+                                <MenuItem key={j} style={{whiteSpace: 'break-spaces'}}>
                                     {
                                         log.url ? (
                                             <Link className="collection-item" to={`${log.url}`}>
