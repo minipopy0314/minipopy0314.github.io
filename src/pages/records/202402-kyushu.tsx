@@ -48,16 +48,16 @@ const Record = {
             name: '黑川溫泉 山河',
             address: '阿蘇郡南小国町大字満願寺 6961-1 南小国 日本',
             tel: '',
-            google_map: '',
+            google_map: 'https://www.sanga-ryokan.com/',
             room: [
                 {
-                    order_no: '1024705520',
+                    order_no: '1030387648',
                     day: '1',
                     room_type: '柃木日式客房 8張榻榻米/私人室內溫泉/14.6平方公尺',
                     user: '3'
                 }
             ],
-            amount: '59,502 日圓'
+            amount: '59,497 日圓'
         },
         {
             name: 'FAV HOTEL KUMAMOTO',
@@ -66,13 +66,13 @@ const Record = {
             google_map: '',
             room: [
                 {
-                    order_no: '1024040780',
+                    order_no: '1030367776',
                     day: '4',
                     room_type: '三人雙床房',
                     user: '3'
                 }
             ],
-            amount: '62,824 日圓'
+            amount: '63,039 日圓'
         },
         {
             name: 'Saga International GuestHouse Hagakure',
