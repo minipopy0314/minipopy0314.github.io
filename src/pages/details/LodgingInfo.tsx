@@ -3,7 +3,7 @@ import { Divider, Grid, Typography } from "@mui/material";
 const LodgingInfo = ({ hotel }) => {
     return (
         <>
-            <p>{hotel.name}</p>
+            <Typography variant="h6" marginTop={7}>{hotel.name}</Typography>
             <Divider />
             <ul>
                 <li>住址: {hotel.address}</li>
@@ -17,7 +17,7 @@ const LodgingInfo = ({ hotel }) => {
                         <Grid item xs={12} md={6}>
                             <ul>
                                 <li>預訂號碼: {room.order_no}</li>
-                                <li>住宿日期: {room.day}</li>
+                                <li>住宿天數: {room.day}</li>
                                 <li>房間類型/住宿計劃: {room.room_type}</li>
                                 <li>利用人數(一個房間): {room.user} 人</li>
                             </ul>
@@ -27,7 +27,6 @@ const LodgingInfo = ({ hotel }) => {
                 })
             }
             <p className="red-text">合計金額: {hotel.amount}</p>
-            <br/><br/><br/><br/>
         </>
     )
 };

@@ -100,10 +100,11 @@ const index = () => {
           <p style={{fontSize: '1.2rem'}}>
             {inputData.date}
           </p>
-          <Typography variant="h5">地區 : {inputData.location}</Typography>
+          <Typography variant="h4" marginTop={10} align="center">地區</Typography>
+          <Typography variant="h6" marginTop={3} align="center">{inputData.location}</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h5">機票</Typography>
+          <Typography variant="h4" marginTop={10} align="center">機票</Typography>
           {
             inputData.airplane &&
             inputData.airplane.map((plane, i) => {
@@ -114,7 +115,7 @@ const index = () => {
           }
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h5">住宿</Typography>
+          <Typography variant="h4" marginTop={10} align="center">住宿</Typography>
           {
             inputData.lodging &&
             inputData.lodging.map((hotel, i) => {
@@ -124,12 +125,9 @@ const index = () => {
             })
           }
         </Grid>
-        <Summary data={inputData} />
+        {/* <Summary data={inputData} /> */}
         <Grid item xs={12}>
-          <Typography variant="h5">行程</Typography>
-          <Divider />
-          <br></br>
-          <br></br>
+          <Typography variant="h4" marginTop={10} marginBottom={10} align="center">行程</Typography>
           {
             inputData.journey &&
             inputData.journey.map((day, i) => {

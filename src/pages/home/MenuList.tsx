@@ -99,7 +99,7 @@ const menuList = [
         record: [
             {
                 date: '2024.05',
-                title: '瑞士自由行(蘇黎世、因得拉肯、策馬特、五名峰)',
+                title: '瑞法自由行(瑞士、法國霞慕尼)',
                 url: '/europe/202405-swiss'
             },
             {

@@ -18,7 +18,7 @@ const JourneyInfo = ({ day }) => {
     return (
         <Grid item xs={12}>
             <Typography variant="h2">{day.date}</Typography>
-            <Typography variant="h5">{day.title}</Typography>
+            <Typography variant="h5" marginTop={5}>{day.title}</Typography>
             {
                 day.pay ? (
                     <p>固定花費 :</p>
