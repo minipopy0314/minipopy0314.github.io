@@ -173,6 +173,12 @@ const Record = {
                     detail: '',
                     url: ''
                 },
+                {
+                    time: '',
+                    title: 'Check in',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
@@ -199,6 +205,12 @@ const Record = {
             log: [
                 {
                     time: '',
+                    title: 'Check out',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
                     title: '因特拉肯',
                     detail: '前往格林德瓦',
                     url: ''
@@ -212,6 +224,12 @@ const Record = {
                 {
                     time: '',
                     title: '少女峰 First',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: 'Check in',
                     detail: '',
                     url: ''
                 },
@@ -265,6 +283,12 @@ const Record = {
             log: [
                 {
                     time: '',
+                    title: 'Check out',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
                     title: '因特拉肯',
                     detail: '搭乘黃金列車 GoldenPass Belle Epoque前往蒙特魯',
                     url: ''
@@ -286,13 +310,25 @@ const Record = {
                     title: '日內瓦',
                     detail: '',
                     url: ''
-                }
+                },
+                {
+                    time: '',
+                    title: 'Check in',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
             date: '6/3',
             title: '法國安錫(Annecy)、霞慕尼(Chamonix)',
             log: [
+                {
+                    time: '',
+                    title: 'Check out',
+                    detail: '',
+                    url: ''
+                },
                 {
                     time: '',
                     title: '安錫',
@@ -317,6 +353,12 @@ const Record = {
                     detail: '',
                     url: ''
                 },
+                {
+                    time: '',
+                    title: 'Check in',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
@@ -334,13 +376,19 @@ const Record = {
                     title: '白朗峰',
                     detail: '',
                     url: ''
-                }
+                },
             ]
         },
         {
             date: '6/5',
             title: '霞慕尼(Chamonix)、策馬特(Zermatt)',
             log: [
+                {
+                    time: '',
+                    title: 'Check out',
+                    detail: '',
+                    url: ''
+                },
                 {
                     time: '',
                     title: '霞慕尼',
@@ -352,7 +400,13 @@ const Record = {
                     title: '策馬特',
                     detail: '',
                     url: ''
-                }
+                },
+                {
+                    time: '',
+                    title: 'Check in',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
@@ -382,13 +436,19 @@ const Record = {
                     title: '五湖健行',
                     detail: '',
                     url: ''
-                }
+                },
             ]
         },
         {
             date: '6/8',
             title: '伯恩(Bern)、蘇黎世(Zurich)',
             log: [
+                {
+                    time: '',
+                    title: 'Check out',
+                    detail: '',
+                    url: ''
+                },
                 {
                     time: '',
                     title: '伯恩',
@@ -400,7 +460,13 @@ const Record = {
                     title: '蘇黎世',
                     detail: '',
                     url: ''
-                }
+                },
+                {
+                    time: '',
+                    title: 'Check in',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
@@ -427,22 +493,22 @@ const Record = {
                 },
                 {
                     time: '15:25(GMT+2)',
-                    title: '杜拜轉機',
+                    title: '賦歸',
                     detail: 'Emirates 航班 蘇黎世飛往杜拜 6/9 23:45(GMT+4) 抵達',
                     url: ''
                 },
-                {
-                    time: '03:40(GMT+4)',
-                    title: '杜拜轉機',
-                    detail: 'Emirates 航班 杜拜飛往台北 6/10 16:15(GMT+8) 抵達',
-                    url: ''
-                }
             ]
         },
         {
             date: '6/10',
             title: '回到溫暖的家',
             log: [
+                {
+                    time: '03:40(GMT+4)',
+                    title: '杜拜轉機',
+                    detail: 'Emirates 航班 杜拜飛往台北 6/10 16:15(GMT+8) 抵達',
+                    url: ''
+                },
                 {
                     time: '16:15(GMT+8)',
                     title: '賦歸',
