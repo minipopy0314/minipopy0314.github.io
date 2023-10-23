@@ -2,59 +2,134 @@ const Record = {
     title: '2024 瑞法自由行',
     date: '2024/05/24 ~ 06/09',
     location: '瑞士、法國霞慕尼',
-    airplane: [
+    flight: [
         {
             company: 'Emirates',
-            roundtrip: true,
-            outbound: 'Emirates 航班 臺北市 TPE 05月24日-23:35(GMT+8) --> 杜拜 DXB 05月25日-05:05(GMT+4) (臺北)桃園機場第1航廈',
-            return: '',
-            outbound_amount: 0,
-            return_amount: 0,
-            luggage: '20公斤(*3)'
-        },
-        {
-            company: 'Emirates',
-            roundtrip: true,
-            outbound: 'Emirates 航班 杜拜 DXB 05月25日-08:40(GMT+4) --> 蘇黎世 ZRH 05月25日-13:20(GMT+2) (阿聯)杜拜機場',
-            return: '',
-            outbound_amount: 0,
-            return_amount: 0,
-            luggage: '20公斤(*3)'
-        },
-        {
-            company: 'Emirates',
-            roundtrip: true,
-            outbound: '',
-            return: 'Emirates 航班 蘇黎世 ZRH 06月09日-15:25(GMT+2) --> 杜拜 DXB 06月09日-23:45(GMT+4) (瑞士)蘇黎世機場第1航廈',
-            outbound_amount: 0,
-            return_amount: 0,
+            airplane: '',
+            takeoff: '臺北市 TPE 05月24日-23:35(GMT+8)',
+            land: '杜拜 DXB 05月25日-05:05(GMT+4)',
+            airport: '(臺北)桃園機場第1航廈',
+            amount: 0,
             luggage: '25公斤(*3)'
         },
         {
             company: 'Emirates',
-            roundtrip: true,
-            outbound: '',
-            return: 'Emirates 航班 杜拜 DXB 06月10日-03:40(GMT+4) --> 臺北市 TPE 06月10日-16:15(GMT+8) (阿聯)杜拜機場',
-            outbound_amount: 108381,
-            return_amount: 0,
+            airplane: '',
+            takeoff: '杜拜 DXB 05月25日-08:40(GMT+4)',
+            land: '蘇黎世 ZRH 05月25日-13:20(GMT+2)',
+            airport: '(阿聯)杜拜機場',
+            amount: 0,
             luggage: '25公斤(*3)'
+        },
+        {
+            company: 'Emirates',
+            airplane: '',
+            takeoff: '蘇黎世 ZRH 06月09日-15:25(GMT+2)',
+            land: '杜拜 DXB 06月09日-23:45(GMT+4)',
+            airport: '(瑞士)蘇黎世機場第1航廈',
+            amount: 0,
+            luggage: '30公斤(*3)'
+        },
+        {
+            company: 'Emirates',
+            airplane: '',
+            takeoff: '杜拜 DXB 06月10日-03:40(GMT+4)',
+            land: '臺北市 TPE 06月10日-16:15(GMT+8)',
+            airport: '(阿聯)杜拜機場',
+            amount: 108381,
+            luggage: '30公斤(*3)'
         },
     ],
     lodging: [
         {
-            name: '',
+            name: 'The Bed + Breakfast',
+            address: '',
+            tel: '',
+            google_map: 'https://www.thebandb.ch/',
+            room: [
+                {
+                    order_no: '',
+                    day: '3',
+                    room_type: '三人房共用衛浴',
+                    user: '3'
+                }
+            ],
+            amount: '580.50 瑞士法郎'
+        },
+        {
+            name: 'Gasthof Schoenegg B&B',
+            address: '',
+            tel: '',
+            google_map: 'https://www.gasthof-schoenegg.ch/?lang=en',
+            room: [
+                {
+                    order_no: '4110128744',
+                    day: '2',
+                    room_type: '公寓套房',
+                    user: '3'
+                }
+            ],
+            amount: '535.50 瑞士法郎'
+        },
+        {
+            name: 'Daniela house',
             address: '',
             tel: '',
             google_map: '',
             room: [
                 {
                     order_no: '',
-                    day: '',
-                    room_type: '',
-                    user: ''
+                    day: '3',
+                    room_type: '公寓套房',
+                    user: '3'
                 }
             ],
-            amount: ''
+            amount: '780.80 瑞士法郎'
+        },
+        {
+            name: 'Grepon 102 house',
+            address: '',
+            tel: '',
+            google_map: 'https://www.happy.rentals/view/5408-chamonix-sud-grepon-102',
+            room: [
+                {
+                    order_no: '',
+                    day: '2',
+                    room_type: '公寓套房',
+                    user: '3'
+                }
+            ],
+            amount: '208 瑞士法郎'
+        },
+        {
+            name: 'Haus Andorra',
+            address: '',
+            tel: '+41279676681',
+            google_map: 'https://www.apartment-rental-zermatt.com/',
+            room: [
+                {
+                    order_no: '',
+                    day: '3',
+                    room_type: '公寓套房',
+                    user: '3'
+                }
+            ],
+            amount: '814.30 瑞士法郎'
+        },
+        {
+            name: 'Hotel Saint Georges',
+            address: '',
+            tel: '',
+            google_map: 'https://www.hotel-st-georges.ch/en/',
+            room: [
+                {
+                    order_no: '1044390556',
+                    day: '1',
+                    room_type: '三人房共用衛浴',
+                    user: '3'
+                }
+            ],
+            amount: '167.08 瑞士法郎'
         },
     ],
     cost: {

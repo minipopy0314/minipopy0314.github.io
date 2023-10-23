@@ -4,16 +4,17 @@ import {
     Typography, 
     MenuList, 
     MenuItem,
-    Divider
+    Divider,
+    Link
 } from "@mui/material"
 
 import menuList from "./MenuList";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const MenuData = menuList.map((item, i) => {
         return (
             <Grid key={i} marginBottom={'10px'}>
-                <Typography variant="h5">{item.country}</Typography>
+                <Typography variant="h4" marginTop={5} marginBottom={2}>{item.country}</Typography>
                 <Divider />
                 <MenuList>
                     {
@@ -22,13 +23,13 @@ const MenuData = menuList.map((item, i) => {
                                 <MenuItem key={j} style={{whiteSpace: 'break-spaces'}}>
                                     {
                                         log.url ? (
-                                            <Link className="collection-item" to={`${log.url}`}>
+                                            <Link href={`/#${log.url}`} underline="none">
                                                 {log.date} {log.title}
                                             </Link>
                                         ) : (
-                                            <a className="collection-item" href="#" style={{color: '#aaa'}}>
+                                            <Link href="#" style={{color: '#aaa'}} underline="none">
                                                 {log.date} {log.title}-計畫中
-                                            </a>
+                                            </Link>
                                         )
                                     }
                                 </MenuItem>

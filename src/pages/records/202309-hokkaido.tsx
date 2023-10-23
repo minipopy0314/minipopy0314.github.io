@@ -2,14 +2,23 @@ const Record = {
     title: '2023 日本北海道地方自由行',
     date: '2023/09/09 ~ 09/13',
     location: '花卷、函館、札幌',
-    airplane: [
+    flight: [
         {
             company: '台灣虎航 Tiger Air Inc.',
-            roundtrip: true,
-            outbound: 'Tiger Air 航班 IT258 臺北市 TPE 09月09日-12:15(GMT+8) --> 花卷 HNA 09月09日-16:50(GMT+9) (臺北)桃園機場第一航廈',
-            return: 'Tiger Air 航班 IT259 花卷 HNA 09月13日-17:50(GMT+9) --> 臺北市 TPE 09月13日-21:00(GMT+8) (日本)花卷機場',
-            outbound_amount: 17247,
-            return_amount: 9051,
+            airplane: 'IT258',
+            takeoff: '臺北市 TPE 09月09日-12:15(GMT+8)',
+            land: '花卷 HNA 09月09日-16:50(GMT+9)',
+            airport: '(臺北)桃園機場第一航廈',
+            amount: 17247,
+            luggage: '單程20公斤(*3)'
+        },
+        {
+            company: '台灣虎航 Tiger Air Inc.',
+            airplane: 'IT259',
+            takeoff: '花卷 HNA 09月13日-17:50(GMT+9)',
+            land: '臺北市 TPE 09月13日-21:00(GMT+8)',
+            airport: '(日本)花卷機場',
+            amount: 9051,
             luggage: '單程20公斤(*3)'
         }
     ],

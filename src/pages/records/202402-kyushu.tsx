@@ -2,14 +2,23 @@ const Record = {
     title: '2024 日本九州地方自由行',
     date: '2024/02/13 ~ 02/25',
     location: '福岡、大分、鹿兒島、宮崎、熊本',
-    airplane: [
+    flight: [
         {
             company: '中華航空 China Airlines Inc.',
-            roundtrip: true,
-            outbound: 'China Airlines 航班 CI116 臺北市 TPE 02月13日-16:30(GMT+8) --> 福岡 FUK 02月13日-19:35(GMT+9) (臺北)桃園機場第2航廈',
-            return: 'China Airlines 航班 CI117 福岡 FUK 02月25日-20:35(GMT+9) --> 臺北市 TPE 02月25日-22:20(GMT+8) (日本)福岡機場第1航廈',
-            outbound_amount: 37665,
-            return_amount: 0,
+            airplane: 'CI116',
+            takeoff: '臺北市 TPE 02月13日-16:30(GMT+8)',
+            land: '福岡 FUK 02月13日-19:35(GMT+9)',
+            airport: '(臺北)桃園機場第2航廈',
+            amount: 0,
+            luggage: '單程23公斤(*3)'
+        },
+        {
+            company: '中華航空 China Airlines Inc.',
+            airplane: 'CI117',
+            takeoff: '福岡 FUK 02月25日-20:35(GMT+9)',
+            land: '臺北市 TPE 02月25日-22:20(GMT+8) ',
+            airport: '(日本)福岡機場第1航廈',
+            amount: 37665,
             luggage: '單程23公斤(*3)'
         }
     ],

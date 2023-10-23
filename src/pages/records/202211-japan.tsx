@@ -2,15 +2,25 @@ const Record = {
     title: '',
     date: '',
     location: '',
-    airplane: [
+    flight: [
         {
-            roundtrip: true,
-            outbound: '',
-            return: '',
-            outbound_amount: '',
-            return_amount: '',
+            company: '',
+            airplane: '',
+            takeoff: '',
+            land: '',
+            airport: '',
+            amount: 0,
             luggage: ''
-        }
+        },
+        {
+            company: '',
+            airplane: '',
+            takeoff: '',
+            land: '',
+            airport: '',
+            amount: 0,
+            luggage: ''
+        },
     ],
     lodging: [
         {

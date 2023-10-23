@@ -87,7 +87,7 @@ const index = () => {
       <Helmet>
           <title>{inputData.title}</title>
       </Helmet>
-      <Grid container>
+      <Grid container padding={'10px'}>
         <Grid item xs={12} marginBottom={'3rem'}>
           <Button variant="contained" onClick={() => {
           window.location.href = '/';}}>
@@ -106,10 +106,10 @@ const index = () => {
         <Grid item xs={12}>
           <Typography variant="h4" marginTop={10} align="center">機票</Typography>
           {
-            inputData.airplane &&
-            inputData.airplane.map((plane, i) => {
+            inputData.flight &&
+            inputData.flight.map((plane, i) => {
               return (
-                <AirplaneInfo key={`airplane${i}`} plane={plane} />
+                <AirplaneInfo key={`flight${i}`} plane={plane} />
               )
             })
           }
