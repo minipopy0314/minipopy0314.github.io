@@ -1,8 +1,17 @@
 import { Accessibility, AttachMoney, Bed, CalendarToday, Home, Map, Numbers, Phone } from "@mui/icons-material";
-import { Divider, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from "@mui/material";
+import { Divider, Grid, List, ListItem, ListItemIcon, ListItemText, Paper, Stack, Typography, styled } from "@mui/material";
 import { Link } from "@mui/material";
 
 const LodgingInfo = ({ hotel }) => {
+    const Item = styled(Paper)(({ theme }) => ({
+        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        ...theme.typography.body2,
+        padding: theme.spacing(1),
+        textAlign: 'center',
+        borderRadius: '10px',
+        color: theme.palette.text.secondary,
+    }));
+    
     return (
         <>
             <Typography variant="h6" marginTop={7}>{hotel.name}</Typography>
@@ -39,12 +48,14 @@ const LodgingInfo = ({ hotel }) => {
                     )
                 }
             </List>
+            <Grid container spacing={2} padding={'16px 20px'}>
             {
                 hotel.room.map((room, i) => {
                 return(
-                    <Grid key={i}>
-                        <Grid item xs={12}>
+                    <Grid item key={i} xs={12} md={6}>
+                        <Item>
                             <List>
+                                <ListItemText>房間 {i+1}</ListItemText>
                                 <ListItem>
                                     <ListItemIcon>
                                         <Numbers />
@@ -70,11 +81,12 @@ const LodgingInfo = ({ hotel }) => {
                                     <ListItemText primary={'利用人數'} secondary={room.user}></ListItemText>
                                 </ListItem>
                             </List>
-                        </Grid>
+                        </Item>
                     </Grid>
                 )
                 })
             }
+            </Grid>
             <List>
                 <ListItem>
                     <ListItemIcon>

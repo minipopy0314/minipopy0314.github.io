@@ -49,7 +49,8 @@ const Record = {
             log: [
                 {
                     time: '',
-                    location: '',
+                    title: '',
+                    detail: '',
                     url: ''
                 }
             ]
