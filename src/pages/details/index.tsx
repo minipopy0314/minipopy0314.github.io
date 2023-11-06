@@ -125,7 +125,14 @@ const index = () => {
             })
           }
         </Grid>
-        {/* <Summary data={inputData} /> */}
+        <Grid item xs={12}>
+          <Typography variant="h4" marginTop={10} marginBottom={10} align="center">開支</Typography>
+          {
+            inputData.cost && (
+              <Summary data={inputData.cost} />
+            )
+          }
+        </Grid>
         <Grid item xs={12}>
           <Typography variant="h4" marginTop={10} marginBottom={10} align="center">行程</Typography>
           {

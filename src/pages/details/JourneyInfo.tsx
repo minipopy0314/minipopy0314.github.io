@@ -19,21 +19,6 @@ const JourneyInfo = ({ day }) => {
         <Grid item xs={12}>
             <Typography variant="h2">{day.date}</Typography>
             <Typography variant="h5" marginTop={5}>{day.title}</Typography>
-            {
-                day.pay ? (
-                    <p>固定花費 :</p>
-                ) : ('')
-            }
-            <ol>
-            {
-                day.pay && 
-                day.pay.map((p, i) => {
-                    return(
-                        <li key={i}>{p}</li>
-                    )
-                })
-            }
-            </ol>
             <Divider />
             <ul className="timeline">
             {

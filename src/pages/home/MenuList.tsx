@@ -128,6 +128,16 @@ const menuList = [
                 url: ''
             },
         ]
+    },
+    {
+        country: '南韓',
+        record: [
+            {
+                date: '2023.11',
+                title: '釜山員工旅遊(釜山)',
+                url: ''
+            },
+        ]
     }
 ]
 export default menuList;

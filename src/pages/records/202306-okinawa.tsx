@@ -100,7 +100,9 @@ const Record = {
         },
     ],
     cost: {
-
+        list: [
+            
+        ]
     },
     journey: [
         {
