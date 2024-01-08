@@ -3,7 +3,7 @@ import FlightIcon from '@mui/icons-material/Flight';
 import LuggageIcon from '@mui/icons-material/Luggage';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import FlightLandIcon from '@mui/icons-material/FlightLand';
-import { AirplaneTicket } from "@mui/icons-material";
+import { AirplaneTicket, LocalAirport } from "@mui/icons-material";
 
 const AirplaneInfo = ({ plane }) => {
     return (
@@ -41,6 +41,12 @@ const AirplaneInfo = ({ plane }) => {
             </List>
             <Divider />
             <List>
+                <ListItem>
+                    <ListItemIcon>
+                        <LocalAirport />
+                    </ListItemIcon>
+                    <ListItemText primary={'出境機場'} secondary={plane.airport}></ListItemText>
+                </ListItem>
                 {
                     plane.amount > 0 && (
                         <ListItem>
