@@ -42,7 +42,7 @@ const Record = {
     ],
     lodging: [
         {
-            name: 'The Bed + Breakfast',
+            name: 'The Bed + Breakfast Luzern',
             address: '',
             tel: '',
             google_map: 'https://www.thebandb.ch/',
@@ -134,14 +134,13 @@ const Record = {
     ],
     cost: {
         list: [
-            '瑞士旅遊通票 Swiss Travel Pass(15天) 429瑞士法郎/人',
+            '瑞士旅遊通票 Swiss Travel Pass(15天) 459瑞士法郎/人',
             '策馬特通行證 Zermatt Peak Pass(2天) 163瑞士法郎/人',
             '少女峰通行證 Jungfrau Travel Pass(3天) 145瑞士法郎/人',
             '少女峰登頂路線車票	63瑞士法郎/人',
             '白朗峰通行證 Mont Blanc MultiPass(1天) 76歐元/人',
             'Kandersteg=Oeschinensee 纜車來回 15瑞士法郎/人',
-            '皮拉圖斯山金色環遊 111.6瑞士法郎/人',
-            '訂位費-黃金列車美好年代(Zweisimmen-Montreux) 9瑞士法郎/人',
+            '皮拉圖斯山金色環遊 39瑞士法郎/人',
         ]
     },
     journey: [
@@ -170,30 +169,42 @@ const Record = {
                 {
                     time: '13:20',
                     title: '抵達蘇黎世',
-                    detail: '購買網卡和兌換旅遊通票並準備搭車至蘇黎世車站轉乘至琉森',
+                    detail: '購買網卡和兌換旅遊通票並準備搭車至蘇黎世車站(Flughafen Zürich => Zurich HB)',
                     url: ''
                 },
                 {
                     time: '',
-                    title: '琉森車站',
+                    title: '蘇黎世車站',
+                    detail: '搭乘火車至琉森(Zurich HB => Luzern)',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '琉森(Luzern)車站',
                     detail: '',
                     url: ''
                 },
                 {
                     time: '',
-                    title: 'Check in',
+                    title: 'Check in The Bed + Breakfast Luzern',
                     detail: '',
                     url: ''
+                },
+                {
+                    time: '',
+                    title: '晚餐',
+                    detail: '預定 Old Swiss House',
+                    url: 'https://www.oldswisshouse.ch/'
                 },
                 {
                     time: '',
                     title: '琉森市區晃晃',
-                    detail: '',
+                    detail: '機動行程',
                     url: ''
                 },
                 {
                     time: '',
-                    title: '宿',
+                    title: '宿 The Bed + Breakfast Luzern',
                     detail: '',
                     url: ''
                 },
@@ -201,8 +212,14 @@ const Record = {
         },
         {
             date: '5/26',
-            title: '琉森、瑞吉山(Rigi)',
+            title: '琉森舊城區、瑞吉山(Rigi)',
             log: [
+                {
+                    time: '',
+                    title: '早餐',
+                    detail: '住宿提供',
+                    url: ''
+                },
                 {
                     time: '',
                     title: '瑞吉山',
@@ -211,8 +228,38 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: '琉森晃晃',
-                    detail: '機動行程如果前天琉森有景點沒去可以今天補',
+                    title: '聖萊奧德伽爾教堂',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '垂死獅子像、冰川公園',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '穆塞格城牆、琉森舊城區',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '斯普洛耶橋、耶穌會教堂',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '卡貝爾橋',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 The Bed + Breakfast Luzern',
+                    detail: '',
                     url: ''
                 },
             ]
@@ -223,7 +270,25 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: '皮拉圖斯山',
+                    title: '早餐',
+                    detail: '住宿提供',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '皮拉圖斯山金色環遊',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '琉森市區晃晃',
+                    detail: '機動行程',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 The Bed + Breakfast Luzern',
                     detail: '',
                     url: ''
                 },
@@ -235,7 +300,19 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: '琉森',
+                    title: '早餐',
+                    detail: '住宿提供',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: 'Check Out The Bed + Breakfast Luzern',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '琉森車站',
                     detail: '搭乘黃金列車前往因特拉肯',
                     url: ''
                 },
@@ -259,7 +336,13 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: 'Check in',
+                    title: 'Check in Gasthof Schoenegg B&B',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Gasthof Schoenegg B&B',
                     detail: '',
                     url: ''
                 },
@@ -271,8 +354,8 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: '藍湖(Blausee)',
-                    detail: '',
+                    title: '早餐',
+                    detail: '住宿提供',
                     url: ''
                 },
                 {
@@ -280,7 +363,19 @@ const Record = {
                     title: '厄希嫩湖(Oeschinensee)',
                     detail: '',
                     url: ''
-                }
+                },
+                {
+                    time: '',
+                    title: '藍湖(Blausee)',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Gasthof Schoenegg B&B',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
@@ -289,7 +384,13 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: 'Check out',
+                    title: '早餐',
+                    detail: '住宿提供',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: 'Check out Gasthof Schoenegg B&B',
                     detail: '',
                     url: ''
                 },
@@ -302,7 +403,7 @@ const Record = {
                 {
                     time: '',
                     title: '格林德瓦',
-                    detail: '可能要找地方放行李',
+                    detail: '可能要在車站寄放行李',
                     url: ''
                 },
                 {
@@ -313,7 +414,13 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: 'Check in',
+                    title: 'Check in Airbnb',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Airbnb',
                     detail: '',
                     url: ''
                 },
@@ -321,7 +428,7 @@ const Record = {
         },
         {
             date: '5/31',
-            title: '少女峰、少女峰車站、小夏克戴',
+            title: '少女峰、少女峰車站、Mannlichen',
             log: [
                 {
                     time: '',
@@ -340,16 +447,58 @@ const Record = {
                     title: '少女峰車站',
                     detail: '',
                     url: ''
-                }
+                },
+                {
+                    time: '',
+                    title: '小夏克戴',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '溫根',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: 'Mannlichen Royal Walk',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '格林德瓦',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Airbnb',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
             date: '6/1',
-            title: '雪朗峰、米倫小鎮',
+            title: '雪朗峰、米倫',
             log: [
                 {
                     time: '',
-                    title: '米倫小鎮',
+                    title: '格林德瓦',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '瀑布鎮',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '米倫',
                     detail: '',
                     url: ''
                 },
@@ -358,23 +507,47 @@ const Record = {
                     title: '雪朗峰',
                     detail: '',
                     url: ''
-                }
+                },
+                {
+                    time: '',
+                    title: '瀑布鎮',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '格林德瓦',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Airbnb',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
             date: '6/2',
-            title: '蒙特魯(Montreux)、西傭城堡、黃金列車 GoldenPass Belle Epoque、日內瓦(Geneva)',
+            title: '蒙特魯(Montreux)、西傭城堡、日內瓦(Geneva)',
             log: [
                 {
                     time: '',
-                    title: 'Check out',
+                    title: 'Check out Airbnb',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '格林德瓦',
                     detail: '',
                     url: ''
                 },
                 {
                     time: '',
                     title: '因特拉肯',
-                    detail: '搭乘黃金列車 GoldenPass Belle Epoque前往蒙特魯',
+                    detail: '搭乘黃金列車 GoldenPass 前往蒙特魯',
                     url: ''
                 },
                 {
@@ -391,13 +564,7 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: '日內瓦',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time: '',
-                    title: 'Check in',
+                    title: '日內瓦舊城區',
                     detail: '',
                     url: ''
                 },
@@ -407,24 +574,6 @@ const Record = {
             date: '6/3',
             title: '法國安錫(Annecy)、霞慕尼(Chamonix)',
             log: [
-                {
-                    time: '',
-                    title: 'Check out',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time: '',
-                    title: '安錫',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time: '',
-                    title: '芒通聖伯納城堡',
-                    detail: '',
-                    url: ''
-                },
                 {
                     time: '',
                     title: '安錫老城區、安錫城堡',
@@ -439,7 +588,13 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: 'Check in',
+                    title: 'Check in Grepon 102 house',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Grepon 102 house',
                     detail: '',
                     url: ''
                 },
@@ -461,6 +616,12 @@ const Record = {
                     detail: '',
                     url: ''
                 },
+                {
+                    time: '',
+                    title: '宿 Grepon 102 house',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
@@ -469,7 +630,7 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: 'Check out',
+                    title: 'Check out Grepon 102 house',
                     detail: '',
                     url: ''
                 },
@@ -487,7 +648,13 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: 'Check in',
+                    title: 'Check in Haus Andorra',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Haus Andorra',
                     detail: '',
                     url: ''
                 },
@@ -508,7 +675,13 @@ const Record = {
                     title: '冰川天堂',
                     detail: '',
                     url: ''
-                }
+                },
+                {
+                    time: '',
+                    title: '宿 Haus Andorra',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
@@ -521,6 +694,12 @@ const Record = {
                     detail: '',
                     url: ''
                 },
+                {
+                    time: '',
+                    title: '宿 Haus Andorra',
+                    detail: '',
+                    url: ''
+                },
             ]
         },
         {
@@ -529,13 +708,13 @@ const Record = {
             log: [
                 {
                     time: '',
-                    title: 'Check out',
+                    title: 'Check out Haus Andorra',
                     detail: '',
                     url: ''
                 },
                 {
                     time: '',
-                    title: '伯恩',
+                    title: '伯恩舊城區',
                     detail: '',
                     url: ''
                 },
@@ -547,7 +726,13 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: 'Check in',
+                    title: 'Check in Hotel Saint Georges',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 Hotel Saint Georges',
                     detail: '',
                     url: ''
                 },
@@ -565,7 +750,7 @@ const Record = {
                 },
                 {
                     time: '10:00',
-                    title: 'Check out',
+                    title: 'Check out Hotel Saint Georges',
                     detail: '',
                     url: ''
                 },
