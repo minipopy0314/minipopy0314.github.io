@@ -133,15 +133,7 @@ const Record = {
         },
     ],
     cost: {
-        list: [
-            '瑞士旅遊通票 Swiss Travel Pass(15天) 459瑞士法郎/人',
-            '策馬特通行證 Zermatt Peak Pass(2天) 163瑞士法郎/人',
-            '少女峰通行證 Jungfrau Travel Pass(3天) 145瑞士法郎/人',
-            '少女峰登頂路線車票	63瑞士法郎/人',
-            '白朗峰通行證 Mont Blanc MultiPass(1天) 76歐元/人',
-            'Kandersteg=Oeschinensee 纜車來回 15瑞士法郎/人',
-            '皮拉圖斯山金色環遊 39瑞士法郎/人',
-        ]
+        list: []
     },
     journey: [
         {
