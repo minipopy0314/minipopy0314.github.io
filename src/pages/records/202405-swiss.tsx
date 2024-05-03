@@ -310,8 +310,14 @@ const Record = {
                 },
                 {
                     time: '',
+                    title: '龍疆',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
                     title: '因特拉肯',
-                    detail: '先搭公車去飯店寄放行李',
+                    detail: '',
                     url: ''
                 },
                 {

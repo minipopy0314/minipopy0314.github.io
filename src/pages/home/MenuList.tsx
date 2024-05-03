@@ -78,17 +78,17 @@ const menuList = [
                 url: '/japan/202402-kyushu'
             },
             {
-                date: '',
+                date: '2025',
                 title: '日本東北地方自由行(秋田、岩手、青森、盛岡)',
                 url: ''
             },
             {
-                date: '',
+                date: '2025',
                 title: '日本中部地方自由行(立山黑部、金澤、名古屋)',
                 url: ''
             },
             {
-                date: '',
+                date: '2025',
                 title: '日本四國地方自由行(高知、松山、德島)',
                 url: ''
             },
@@ -135,7 +135,7 @@ const menuList = [
             {
                 date: '2023.11',
                 title: '釜山員工旅遊(釜山)',
-                url: ''
+                url: '/#'
             },
         ]
     }
