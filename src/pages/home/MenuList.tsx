@@ -78,17 +78,22 @@ const menuList = [
                 url: '/japan/202402-kyushu'
             },
             {
-                date: '2025',
-                title: '日本東北地方自由行(秋田、岩手、青森、盛岡)',
-                url: ''
+                date: '2024.11',
+                title: '日本員工旅遊(沖繩)',
+                url: '/#'
             },
             {
-                date: '2025',
+                date: '2025.02',
+                title: '日本東北地方自由行(名古屋、秋田、岩手、青森)',
+                url: '/japan/202502-japan'
+            },
+            {
+                date: '',
                 title: '日本中部地方自由行(立山黑部、金澤、名古屋)',
                 url: ''
             },
             {
-                date: '2025',
+                date: '',
                 title: '日本四國地方自由行(高知、松山、德島)',
                 url: ''
             },
@@ -101,6 +106,11 @@ const menuList = [
                 date: '2024.05',
                 title: '瑞法自由行(瑞士、法國霞慕尼)',
                 url: '/europe/202405-swiss'
+            },
+            {
+                date: '2025',
+                title: '歐洲自由行(義大利)',
+                url: ''
             },
             {
                 date: '',
@@ -134,7 +144,7 @@ const menuList = [
         record: [
             {
                 date: '2023.11',
-                title: '釜山員工旅遊(釜山)',
+                title: '韓國員工旅遊(釜山)',
                 url: '/#'
             },
         ]

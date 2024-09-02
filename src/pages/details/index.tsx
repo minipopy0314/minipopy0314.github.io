@@ -24,6 +24,7 @@ import data202304 from '../records/202304-kyoto'
 import data202306 from '../records/202306-okinawa'
 import data202309 from '../records/202309-hokkaido'
 import data202402 from '../records/202402-kyushu'
+import data202502 from '../records/202502-japan'
 
 import data202405 from '../records/202405-swiss'
 
@@ -79,6 +80,9 @@ const index = () => {
       break;
     case '202405-swiss':
       inputData = data202405;
+      break;
+    case '202502-japan':
+      inputData = data202502;
       break;
   }
 
