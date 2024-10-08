@@ -97,13 +97,13 @@ const Record = {
             room: [
                 {
                     order_no: '',
-                    day: '2025年2月4日(星期) 開始 1 宿',
+                    day: '2025年2月4日(星期二) 開始 1 宿',
                     room_type: '雙人房',
                     user: '2'
                 },
                 {
                     order_no: '',
-                    day: '2025年2月4日(星期) 開始 1 宿',
+                    day: '2025年2月4日(星期二) 開始 1 宿',
                     room_type: '雙人房',
                     user: '2'
                 }
@@ -111,19 +111,19 @@ const Record = {
             amount: '14,567 日圓'
         },
         {
-            name: '',
+            name: '秋保溫泉 瑞鳳',
             address: '',
             tel: '',
             google_map: '',
             room: [
                 {
                     order_no: '',
-                    day: '2025年1月30日(星期) 開始宿',
-                    room_type: '',
+                    day: '2025年2月5日(星期三) 開始宿',
+                    room_type: '和室',
                     user: '3'
                 }
             ],
-            amount: ' 日圓'
+            amount: '44,329 日圓'
         },
     ],
     cost: {
@@ -300,7 +300,13 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: '宿',
+                    title: '十和田湖、八甲山',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '宿 APA仙台駅北',
                     detail: '',
                     url: ''
                 },
@@ -314,7 +320,25 @@ const Record = {
             log: [
                 {
                     time:'',
-                    title: '宿',
+                    title: 'Check out APA仙台駅北',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '猊鼻溪',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '秋保溫泉',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '宿 秋保溫泉 瑞鳳',
                     detail: '',
                     url: ''
                 },
@@ -327,8 +351,8 @@ const Record = {
             ],
             log: [
                 {
-                    time:'6:00',
-                    title: 'Check out',
+                    time:'',
+                    title: 'Check out 秋保溫泉 瑞鳳',
                     detail: '',
                     url: ''
                 },
