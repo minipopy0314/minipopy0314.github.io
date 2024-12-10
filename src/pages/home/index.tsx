@@ -13,6 +13,9 @@ import menuList from "./MenuList";
 import React from "react";
 
 const MenuData = menuList.map((item, i) => {
+
+    var today = new Date();
+    var year = today.getFullYear();
     return (
         <Grid key={i} marginBottom={'10px'}>
             <Typography variant="h4" marginTop={5} marginBottom={2}>{item.country}</Typography>
@@ -25,10 +28,10 @@ const MenuData = menuList.map((item, i) => {
                                 {
                                     log.url ? (
                                         <Link href={`/#${log.url}`} underline="none">
-                                            <Chip label={log.date} color="primary" size="small" sx={{ marginRight: 1 }} />
-                                            {log.title}
+                                            <Chip label={log.date} color={log.title.includes('員工') ? 'secondary' : 'primary'} size="small" sx={{ marginRight: 1 }} />
+                                            <span>{log.title}</span>
                                             {
-                                                log.date.includes('2025') && (
+                                                log.date.includes(String(year + 1)) && (
                                                     <Chip label="NEW" color="success" size="small" sx={{ marginLeft: 1 }} />
                                                 )
                                             }
