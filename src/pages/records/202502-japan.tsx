@@ -25,8 +25,8 @@ const Record = {
     lodging: [
         {
             name: 'Comfort INN 名古屋榮站前',
-            address: '',
-            tel: '',
+            address: '3 Chome-16-30 Nishiki, Naka Ward, Nagoya, Aichi 460-0003日本',
+            tel: '+81 52-951-1411',
             google_map: '',
             room: [
                 {
@@ -39,30 +39,24 @@ const Record = {
             amount: '13,300 日圓'
         },
         {
-            name: 'APA仙台駅五橋',
-            address: '',
-            tel: '',
+            name: '仙台蒙特利飯店',
+            address: '4 Chome-1-8 Central, Aoba Ward, Sendai, Miyagi 980-0021日本',
+            tel: '+81 22-265-7110',
             google_map: '',
             room: [
                 {
                     order_no: '',
                     day: '2025年1月31日(星期五) 開始 1 宿',
-                    room_type: '單人禁菸房',
-                    user: '1'
+                    room_type: '禁菸房',
+                    user: '3'
                 },
-                {
-                    order_no: '',
-                    day: '2025年1月31日(星期五) 開始 1 宿',
-                    room_type: '雙人禁菸房',
-                    user: '2'
-                }
             ],
-            amount: '13,535 日圓'
+            amount: '21,706 日圓'
         },
         {
             name: '乳頭溫泉鄉 妙乃湯',
-            address: '',
-            tel: '',
+            address: 'Komagatake-2-1 Tazawako Obonai, Semboku, Akita 014-1201日本',
+            tel: '+81 187-46-2740',
             google_map: '',
             room: [
                 {
@@ -76,8 +70,8 @@ const Record = {
         },
         {
             name: 'MYSTAYS 青森駅',
-            address: '',
-            tel: '',
+            address: '1 Chome-8-6 Shinmachi, Aomori, 030-0801日本',
+            tel: '+81 17-721-5656',
             google_map: '',
             room: [
                 {
@@ -91,8 +85,8 @@ const Record = {
         },
         {
             name: 'APA仙台駅北',
-            address: '',
-            tel: '',
+            address: '201-1 Nakakecho, Miyagino Ward, Sendai, Miyagi 983-0864',
+            tel: '+81 22-742-3630',
             google_map: '',
             room: [
                 {
@@ -112,8 +106,8 @@ const Record = {
         },
         {
             name: '秋保溫泉 瑞鳳',
-            address: '',
-            tel: '',
+            address: '982-0241 宮城県仙台市太白区秋保町湯元字除26-1',
+            tel: '0570-550-397',
             google_map: '',
             room: [
                 {
@@ -159,12 +153,36 @@ const Record = {
                 {
                     time:'',
                     title: '早餐',
+                    detail: '隨便吃',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '熱田神宮',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
                     title: '中餐',
+                    detail: '熱田蓬萊軒 神宮店 11:30 開始營業',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '名古屋城',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'大須觀音、大須商店街',
+                    title: '',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'萬松寺、三輪神社',
+                    title: '',
                     detail: '',
                     url: ''
                 },
@@ -201,6 +219,18 @@ const Record = {
                     url: ''
                 },
                 {
+                    time:'',
+                    title: '御蔭橫丁',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '名古屋站',
+                    detail: '直達仙台（東京換乘）',
+                    url: ''
+                },
+                {
                     time: '',
                     title: '宿 APA仙台駅五橋',
                     detail: '',
@@ -218,6 +248,24 @@ const Record = {
                     time:'',
                     title: 'Check out APA仙台駅五橋',
                     detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '田澤湖站',
+                    detail: '寄放行李',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '田澤湖周遊巴士',
+                    detail: '注意巴士班表',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '乳頭溫泉鄉',
+                    detail: '注意巴士班表',
                     url: ''
                 },
                 {
@@ -254,6 +302,24 @@ const Record = {
                 },
                 {
                     time:'',
+                    title: '田澤湖站',
+                    detail: '寄放行李',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '秋田內陸線',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '青森',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
                     title: '宿 MYSTAYS 青森駅',
                     detail: '',
                     url: ''
@@ -262,27 +328,7 @@ const Record = {
         },
         {
             date: '2/3',
-            title: '青森、輕津鐵道、弘前城',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '早餐',
-                    detail: '旅館提供',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: '宿 MYSTAYS 青森駅',
-                    detail: '',
-                    url: ''
-                },
-            ]
-        },
-        {
-            date: '2/4',
-            title: '青森、十和田湖、八甲山',
+            title: '青森、十和田湖、八甲山纜車',
             pay: [
             ],
             log: [
@@ -300,7 +346,19 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: '十和田湖、八甲山',
+                    title: '八甲山纜車',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '奧入瀨溪流',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '十和田湖',
                     detail: '',
                     url: ''
                 },
@@ -313,15 +371,65 @@ const Record = {
             ]
         },
         {
+            date: '2/4',
+            title: '青森、輕津鐵道、弘前城',
+            pay: [
+            ],
+            log: [
+                {
+                    time:'',
+                    title: '早餐',
+                    detail: '旅館提供',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: 'JR青森站',
+                    detail: '搭乘第一班次愉快列車白神號',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: 'JR五所川原站、津輕五所川原站',
+                    detail: '轉乘暖爐列車',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '津輕金木站',
+                    detail: '隨意逛逛後搭下一個班次折返',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: 'JR弘前站',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '弘前城',
+                    detail: '附近吃個蘋果派',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '宿 MYSTAYS 青森駅',
+                    detail: '',
+                    url: ''
+                },
+            ]
+        },
+        {
             date: '2/5',
-            title: '猊鼻溪',
+            title: '猊鼻溪、秋保溫泉',
             pay: [
             ],
             log: [
                 {
                     time:'',
                     title: 'Check out APA仙台駅北',
-                    detail: '',
+                    detail: '寄放行李',
                     url: ''
                 },
                 {
@@ -346,13 +454,31 @@ const Record = {
         },
         {
             date: '2/6',
-            title: '東京',
+            title: '秋保溫泉、東京',
             pay: [
             ],
             log: [
                 {
                     time:'',
                     title: 'Check out 秋保溫泉 瑞鳳',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '秋保溫泉',
+                    detail: '早上可以晃晃',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '仙台',
+                    detail: '退房後回仙台轉新幹線回東京',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '東京',
                     detail: '',
                     url: ''
                 },

@@ -1,24 +1,24 @@
 const Record = {
     title: '2025 日本立山黑部自由行',
-    date: '2025/01/30 ~ 02/06',
+    date: '2025/05/27 ~ 06/02',
     location: '立山黑部、金澤、白川鄉',
     flight: [
         {
             company: '樂桃航空 Peach Air Inc.',
             airplane: 'MM722',
-            takeoff: '臺北市 TPE 01月30日-02:45(GMT+8)',
-            land: '名古屋 HNA 01月30日-06:20(GMT+9)',
+            takeoff: '臺北市 TPE 05月27日-01:55(GMT+8)',
+            land: '名古屋 HNA 05月27日-05:50(GMT+9)',
             airport: '(臺北)桃園機場第一航廈',
             amount: 0,
             luggage: '單程20公斤(*3)'
         },
         {
             company: '樂桃航空 Peach Air Inc.',
-            airplane: 'MM627',
-            takeoff: '東京 HNA 02月06日-22:05(GMT+9)',
-            land: '臺北市 TPE 02月07日-01:25(GMT+8)',
-            airport: '(日本)成田國際機場第一航廈',
-            amount: 11620,
+            airplane: 'MM723',
+            takeoff: '東京 HNA 06月02日-22:45(GMT+9)',
+            land: '臺北市 TPE 06月03日-00:55(GMT+8)',
+            airport: '(日本)中部國際機場第一航廈',
+            amount: 25770,
             luggage: '單程20公斤(*3)'
         }
     ],

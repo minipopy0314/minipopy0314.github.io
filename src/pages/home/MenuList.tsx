@@ -95,7 +95,7 @@ const menuList = [
             {
                 date: '2025.05',
                 title: '日本中部地方自由行(立山黑部、金澤、白川鄉)',
-                url: ''
+                url: '/japan/202505-japan'
             },
             {
                 date: '',
