@@ -232,7 +232,7 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: '宿 APA仙台駅五橋',
+                    title: '宿 仙台蒙特利飯店',
                     detail: '',
                     url: ''
                 },
@@ -246,7 +246,7 @@ const Record = {
             log: [
                 {
                     time:'',
-                    title: 'Check out APA仙台駅五橋',
+                    title: 'Check out 仙台蒙特利飯店',
                     detail: '',
                     url: ''
                 },
