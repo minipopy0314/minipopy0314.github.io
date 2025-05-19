@@ -98,6 +98,11 @@ const menuList = [
                 url: '/japan/202505-japan'
             },
             {
+                date: '2025.09',
+                title: '日本員工旅遊(九州)',
+                url: '/#'
+            },
+            {
                 date: '',
                 title: '日本四國地方自由行(高知、松山、德島)',
                 url: ''
@@ -123,7 +128,7 @@ const menuList = [
                 url: '/europe/202405-swiss'
             },
             {
-                date: '2025.09',
+                date: '',
                 title: '南歐自由行(奧匈、義大利)',
                 url: ''
             },

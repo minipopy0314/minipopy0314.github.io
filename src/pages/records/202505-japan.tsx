@@ -24,106 +24,64 @@ const Record = {
     ],
     lodging: [
         {
-            name: 'Comfort INN 名古屋榮站前',
+            name: 'FAV LUX飛驒高山',
             address: '',
             tel: '',
             google_map: '',
             room: [
                 {
                     order_no: '',
-                    day: '2025年1月30日(星期四) 開始 1 宿',
-                    room_type: '雙床+沙發床',
+                    day: '2025年5月27日(星期二) 開始 3 宿',
+                    room_type: '家庭房',
                     user: '3'
                 }
             ],
-            amount: '13,300 日圓'
+            amount: '83,209 日圓'
         },
         {
-            name: 'APA仙台駅五橋',
+            name: 'スマイルホテルプレミアム 金沢東口駅前',
             address: '',
             tel: '',
             google_map: '',
             room: [
                 {
                     order_no: '',
-                    day: '2025年1月31日(星期五) 開始 1 宿',
-                    room_type: '單人禁菸房',
-                    user: '1'
+                    day: '2025年5月30日(星期五) 開始 1 宿',
+                    room_type: '雙床房',
+                    user: '3'
                 },
-                {
-                    order_no: '',
-                    day: '2025年1月31日(星期五) 開始 1 宿',
-                    room_type: '雙人禁菸房',
-                    user: '2'
-                }
             ],
-            amount: '13,535 日圓'
+            amount: '12,447 日圓'
         },
         {
-            name: '乳頭溫泉鄉 妙乃湯',
+            name: '東橫INN 富山站新幹線口2號店',
             address: '',
             tel: '',
             google_map: '',
             room: [
                 {
                     order_no: '',
-                    day: '2025年2月1日(星期六) 開始 1 宿',
-                    room_type: '和室',
-                    user: '3'
-                }
-            ],
-            amount: '72,000 日圓'
-        },
-        {
-            name: 'MYSTAYS 青森駅',
-            address: '',
-            tel: '',
-            google_map: '',
-            room: [
-                {
-                    order_no: '',
-                    day: '2025年2月2日(星期日) 開始 2 宿',
-                    room_type: '三床房',
-                    user: '3'
-                }
-            ],
-            amount: '40,967 日圓'
-        },
-        {
-            name: 'APA仙台駅北',
-            address: '',
-            tel: '',
-            google_map: '',
-            room: [
-                {
-                    order_no: '',
-                    day: '2025年2月4日(星期二) 開始 1 宿',
+                    day: '2025年5月31日(星期六) 開始 1 宿',
                     room_type: '雙人房',
-                    user: '2'
-                },
-                {
-                    order_no: '',
-                    day: '2025年2月4日(星期二) 開始 1 宿',
-                    room_type: '雙人房',
-                    user: '2'
+                    user: '3'
                 }
             ],
-            amount: '14,567 日圓'
+            amount: '22,035 日圓'
         },
         {
-            name: '秋保溫泉 瑞鳳',
+            name: '松本M酒店',
             address: '',
             tel: '',
             google_map: '',
             room: [
                 {
                     order_no: '',
-                    day: '2025年2月5日(星期三) 開始宿',
-                    room_type: '和室',
+                    day: '2025年6月1日(星期日) 開始 1 宿',
+                    room_type: '雙床房',
                     user: '3'
                 }
             ],
-            amount: '44,329 日圓'
+            amount: '11,539 日圓'
         },
     ],
     cost: {
@@ -133,8 +91,8 @@ const Record = {
     },
     journey: [
         {
-            date: '1/30',
-            title: '名古屋',
+            date: '5/27',
+            title: '名古屋、高山老街陣屋、飛驒之里',
             pay: [
             ],
             log: [
@@ -152,14 +110,14 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: 'Check in Comfort INN 名古屋榮站前',
-                    detail: '寄放行李',
+                    title: '早餐',
+                    detail: '',
                     url: ''
                 },
                 {
                     time:'',
-                    title: '早餐',
-                    detail: '',
+                    title: 'Check in FAV LUX飛驒高山',
+                    detail: '寄放行李',
                     url: ''
                 },
                 {
@@ -170,73 +128,173 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: '晚餐',
+                    title: '高山老街陣屋',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
-                    title: '宿 Comfort INN 名古屋榮站前',
-                    detail: '',
-                    url: ''
-                },
-            ]
-        },
-        {
-            date: '1/31',
-            title: '伊勢神宮',
-            pay: [
-            ],
-            log: [
-                {
-                    time: '',
-                    title: 'Check out Comfort INN 名古屋榮站前',
-                    detail: '寄放行李',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: '伊勢神宮',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time: '',
-                    title: '宿 APA仙台駅五橋',
-                    detail: '',
-                    url: ''
-                },
-            ]
-        },
-        {
-            date: '2/1',
-            title: '田澤湖、乳頭溫泉鄉',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: 'Check out APA仙台駅五橋',
+                    title: '飛驒之里',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
                     title: '晚餐',
-                    detail: '旅館提供',
+                    detail: '',
                     url: ''
                 },
                 {
                     time:'',
-                    title: '宿 乳頭溫泉鄉 妙乃湯',
+                    title: '宿 FAV LUX飛驒高山',
                     detail: '',
                     url: ''
                 },
             ]
         },
         {
-            date: '2/2',
-            title: '秋田內陸線',
+            date: '5/28',
+            title: '宮川朝市、飛驒古川、氣多若宮神社',
+            pay: [
+            ],
+            log: [
+                {
+                    time:'',
+                    title: '早餐',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宮川朝市',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '飛驒古川、氣多若宮神社',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time: '',
+                    title: '宿 FAV LUX飛驒高山',
+                    detail: '',
+                    url: ''
+                },
+            ]
+        },
+        {
+            date: '5/29',
+            title: '新穗高纜車',
+            pay: [
+            ],
+            log: [
+                {
+                    time:'',
+                    title: '早餐',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '平湯溫泉',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '新穗高纜車',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '晚餐',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '宿 FAV LUX飛驒高山',
+                    detail: '',
+                    url: ''
+                },
+            ]
+        },
+        {
+            date: '5/30',
+            title: '白川鄉合掌村',
+            pay: [
+            ],
+            log: [
+                {
+                    time:'',
+                    title: 'Check out FAV LUX飛驒高山',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '早餐',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '白川鄉合掌村',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '晚餐',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '宿 スマイルホテルプレミアム 金沢東口駅前',
+                    detail: '',
+                    url: ''
+                },
+            ]
+        },
+        {
+            date: '5/31',
+            title: '金澤',
+            pay: [
+            ],
+            log: [
+                {
+                    time:'',
+                    title: '早餐',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '金澤',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '晚餐',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '宿 東橫INN 富山站新幹線口2號店',
+                    detail: '',
+                    url: ''
+                },
+            ]
+        },
+        {
+            date: '6/1',
+            title: '立山黑部貫穿路線',
             pay: [
             ],
             log: [
@@ -248,124 +306,64 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: 'Check out 乳頭溫泉鄉 妙乃湯',
+                    title: 'Check out 東橫INN 富山站新幹線口2號店',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
-                    title: '宿 MYSTAYS 青森駅',
+                    title: '立山黑部貫穿路線',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '宿 松本M酒店',
                     detail: '',
                     url: ''
                 },
             ]
         },
         {
-            date: '2/3',
-            title: '青森、輕津鐵道、弘前城',
+            date: '6/2',
+            title: '松本、名古屋',
             pay: [
             ],
             log: [
+                {
+                    time:'',
+                    title: 'Check out 松本M酒店',
+                    detail: '',
+                    url: ''
+                },
                 {
                     time:'',
                     title: '早餐',
-                    detail: '旅館提供',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: '宿 MYSTAYS 青森駅',
-                    detail: '',
-                    url: ''
-                },
-            ]
-        },
-        {
-            date: '2/4',
-            title: '青森、十和田湖、八甲山',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '早餐',
-                    detail: '旅館提供',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: 'Check out MYSTAYS 青森駅',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
-                    title: '十和田湖、八甲山',
+                    title: '松本',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
-                    title: '宿 APA仙台駅北',
-                    detail: '',
-                    url: ''
-                },
-            ]
-        },
-        {
-            date: '2/5',
-            title: '猊鼻溪',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: 'Check out APA仙台駅北',
+                    title: '名古屋',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
-                    title: '猊鼻溪',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: '秋保溫泉',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: '宿 秋保溫泉 瑞鳳',
-                    detail: '',
-                    url: ''
-                },
-            ]
-        },
-        {
-            date: '2/6',
-            title: '東京',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: 'Check out 秋保溫泉 瑞鳳',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time:'14:40',
-                    title: '成田空港',
+                    title: '名古屋中部國際空港',
                     detail: '20:00(GMT+9) 抵達',
                     url: ''
                 },
                 {
-                    time:'22:00',
+                    time:'',
                     title: '賦歸',
-                    detail: '回程 MM627 01:25(GMT+8) 抵達 桃園機場第一航廈',
+                    detail: '回程 MM723 01:25(GMT+8) 抵達 桃園機場第一航廈',
                     url: ''
                 },
             ]
