@@ -92,7 +92,7 @@ const Record = {
     journey: [
         {
             date: '5/27',
-            title: '名古屋、高山老街陣屋、飛驒之里',
+            title: '名古屋、飛驒之里',
             pay: [
             ],
             log: [
@@ -128,12 +128,6 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: '高山老街陣屋',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time:'',
                     title: '飛驒之里',
                     detail: '',
                     url: ''
@@ -154,7 +148,7 @@ const Record = {
         },
         {
             date: '5/28',
-            title: '宮川朝市、飛驒古川、氣多若宮神社',
+            title: '宮川朝市、高山老街陣屋、飛驒古川、氣多若宮神社',
             pay: [
             ],
             log: [
@@ -166,7 +160,7 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: '宮川朝市',
+                    title: '宮川朝市、高山老街陣屋',
                     detail: '',
                     url: ''
                 },
@@ -274,7 +268,43 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: '金澤',
+                    title: 'Check out スマイルホテルプレミアム 金沢東口駅前',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '近江町市場',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '兼六園',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '金澤城公園',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '午餐',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '東茶屋街',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '長町武家屋敷遺跡',
                     detail: '',
                     url: ''
                 },
