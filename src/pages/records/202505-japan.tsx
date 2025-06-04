@@ -63,7 +63,13 @@ const Record = {
                     order_no: '',
                     day: '2025年5月31日(星期六) 開始 1 宿',
                     room_type: '雙人房',
-                    user: '3'
+                    user: '2'
+                },
+                {
+                    order_no: '',
+                    day: '2025年5月31日(星期六) 開始 1 宿',
+                    room_type: '雙人房',
+                    user: '1'
                 }
             ],
             amount: '22,035 日圓'
@@ -134,6 +140,12 @@ const Record = {
                 },
                 {
                     time:'',
+                    title: '高山老街',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
                     title: '晚餐',
                     detail: '',
                     url: ''
@@ -160,13 +172,25 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: '宮川朝市、高山老街陣屋',
+                    title: '宮川朝市',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
                     title: '飛驒古川、氣多若宮神社',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '高山陣屋',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '晚餐',
                     detail: '',
                     url: ''
                 },
@@ -192,13 +216,13 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: '平湯溫泉',
+                    title: '新穗高纜車',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
-                    title: '新穗高纜車',
+                    title: '高山陣屋',
                     detail: '',
                     url: ''
                 },
@@ -274,12 +298,6 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: '近江町市場',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time:'',
                     title: '兼六園',
                     detail: '',
                     url: ''
@@ -287,6 +305,12 @@ const Record = {
                 {
                     time:'',
                     title: '金澤城公園',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '近江町市場',
                     detail: '',
                     url: ''
                 },
@@ -374,13 +398,25 @@ const Record = {
                 },
                 {
                     time:'',
-                    title: '松本',
+                    title: '四柱神社、松本中町老街',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '中餐',
                     detail: '',
                     url: ''
                 },
                 {
                     time:'',
                     title: '名古屋',
+                    detail: '',
+                    url: ''
+                },
+                {
+                    time:'',
+                    title: '晚餐',
                     detail: '',
                     url: ''
                 },
