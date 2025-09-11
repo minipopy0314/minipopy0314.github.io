@@ -175,14 +175,14 @@ const Record = {
                     url: ''
                 },
                 {
-                    time:'大須觀音、大須商店街',
-                    title: '',
+                    time:'',
+                    title: '大須觀音、大須商店街',
                     detail: '',
                     url: ''
                 },
                 {
-                    time:'萬松寺、三輪神社',
-                    title: '',
+                    time:'',
+                    title: '萬松寺、三輪神社',
                     detail: '',
                     url: ''
                 },
