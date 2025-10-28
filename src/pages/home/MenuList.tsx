@@ -128,9 +128,9 @@ const menuList = [
                 url: '/europe/202405-swiss'
             },
             {
-                date: '',
-                title: '南歐自由行(奧匈、義大利)',
-                url: ''
+                date: '2026.02',
+                title: '義大利自由行(米蘭、威尼斯、佛羅倫斯、羅馬)',
+                url: '/europe/202602-italy'
             },
             {
                 date: '',
