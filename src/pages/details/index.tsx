@@ -29,6 +29,7 @@ import data202502 from '../records/202502-japan'
 import data202505 from '../records/202505-japan'
 
 import data202405 from '../records/202405-swiss'
+import data202602 from '../records/202602-italy'
 
 const index = () => {
   const params = useParams()
@@ -91,6 +92,9 @@ const index = () => {
       break;
     case '202505-japan':
       inputData = data202505;
+      break;
+    case '202602-italy':
+      inputData = data202602;
       break;
   }
 
