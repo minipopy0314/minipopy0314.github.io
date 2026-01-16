@@ -1,448 +1,1079 @@
 const Record = {
-    title: '2026 義大利自由行(米蘭、威尼斯、佛羅倫斯、羅馬)',
-    date: '2026/02/18 ~ 03/07',
-    location: '米蘭、威尼斯、佛羅倫斯、羅馬',
-    flight: [
-        {
-            company: '新加坡航空 Singapore Airlines',
-            airplane: 'SQ877',
-            takeoff: '臺北市 TPE 02月18日-14:10(GMT+8)',
-            land: '新加坡 SIN 02月18日-18:55(GMT+8)',
-            airport: '(臺北)桃園機場第二航廈',
-            amount: 0,
-            luggage: '單程25公斤(*3)'
-        },
-        {
-            company: '新加坡航空 Singapore Airlines',
-            airplane: 'SQ378',
-            takeoff: '新加坡 SIN 02月18日-23:45(GMT+8)',
-            land: '米蘭 MXP 02月19日-06:30(GMT+2)',
-            airport: '(新加坡)樟宜機場第三航廈',
-            amount: 0,
-            luggage: '單程25公斤(*3)'
-        },
-        {
-            company: '新加坡航空 Singapore Airlines',
-            airplane: 'SQ355',
-            takeoff: '米蘭 MXP 03月07日-12:35(GMT+2)',
-            land: '新加坡 SIN 03月08日-07:30(GMT+8)',
-            airport: '(義大利)米蘭馬爾彭薩機場',
-            amount: 0,
-            luggage: '單程25公斤(*3)'
-        },
-        {
-            company: '新加坡航空 Singapore Airlines',
-            airplane: 'SQ878',
-            takeoff: '新加坡 SIN 03月08日-11:40(GMT+8)',
-            land: '臺北市 TPE 03月08日-16:20(GMT+8)',
-            airport: '(新加坡)樟宜機場第三航廈',
-            amount: 30827,
-            luggage: '單程25公斤(*3)'
-        }
-    ],
-    lodging: [
-        {
-            name: 'Ca Viola e Tobia by Venicevillas',
-            address: '',
-            tel: '',
-            google_map: '',
-            room: [
-                {
-                    order_no: '',
-                    day: '2026年2月19日(星期四) 開始 3 宿',
-                    room_type: '整間公寓',
-                    user: '3'
-                }
-            ],
-            amount: '497.6 歐元'
-        },
-        {
-            name: 'Federica House',
-            address: '',
-            tel: '',
-            google_map: '',
-            room: [
-                {
-                    order_no: '',
-                    day: '2026年2月22日(星期日) 開始 4 宿',
-                    room_type: '整間公寓',
-                    user: '3'
-                },
-            ],
-            amount: '760.95 歐元'
-        },
-        {
-            name: 'JustKey Guest House',
-            address: '',
-            tel: '',
-            google_map: '',
-            room: [
-                {
-                    order_no: '',
-                    day: '2026年2月26日(星期四) 開始 2 宿',
-                    room_type: '整間公寓',
-                    user: '3'
-                }
-            ],
-            amount: '170 歐元'
-        },
-        {
-            name: 'Francesca Romana House',
-            address: '',
-            tel: '',
-            google_map: '',
-            room: [
-                {
-                    order_no: '',
-                    day: '2026年2月28日(星期六) 開始 4 宿',
-                    room_type: '整間公寓',
-                    user: '3'
-                }
-            ],
-            amount: '690.67 歐元'
-        },
-        {
-            name: 'Holiday Rent House',
-            address: '',
-            tel: '',
-            google_map: '',
-            room: [
-                {
-                    order_no: '',
-                    day: '2026年3月4日(星期三) 開始 3 宿',
-                    room_type: '整間公寓',
-                    user: '3'
-                },
-            ],
-            amount: '496.47 歐元'
-        },
-    ],
-    cost: {
-        list: [
-            
-        ]
+  title: "2026 義大利自由行(米蘭、威尼斯、佛羅倫斯、羅馬)",
+  date: "2026/02/18 ~ 03/07",
+  location: "米蘭、威尼斯、佛羅倫斯、羅馬",
+  flight: [
+    {
+      company: "新加坡航空 Singapore Airlines",
+      airplane: "SQ877",
+      takeoff: "臺北市 TPE 02月18日-14:10(GMT+8)",
+      land: "新加坡 SIN 02月18日-18:55(GMT+8)",
+      airport: "(臺北)桃園機場第二航廈",
+      amount: 0,
+      luggage: "單程25公斤(*3)",
     },
-    journey: [
+    {
+      company: "新加坡航空 Singapore Airlines",
+      airplane: "SQ378",
+      takeoff: "新加坡 SIN 02月18日-23:45(GMT+8)",
+      land: "米蘭 MXP 02月19日-06:30(GMT+2)",
+      airport: "(新加坡)樟宜機場第三航廈",
+      amount: 0,
+      luggage: "單程25公斤(*3)",
+    },
+    {
+      company: "新加坡航空 Singapore Airlines",
+      airplane: "SQ355",
+      takeoff: "米蘭 MXP 03月07日-12:35(GMT+2)",
+      land: "新加坡 SIN 03月08日-07:30(GMT+8)",
+      airport: "(義大利)米蘭馬爾彭薩機場",
+      amount: 0,
+      luggage: "單程25公斤(*3)",
+    },
+    {
+      company: "新加坡航空 Singapore Airlines",
+      airplane: "SQ878",
+      takeoff: "新加坡 SIN 03月08日-11:40(GMT+8)",
+      land: "臺北市 TPE 03月08日-16:20(GMT+8)",
+      airport: "(新加坡)樟宜機場第三航廈",
+      amount: 30827,
+      luggage: "單程25公斤(*3)",
+    },
+  ],
+  lodging: [
+    {
+      name: "Ca Viola e Tobia by Venicevillas",
+      address: "",
+      tel: "",
+      google_map: "",
+      room: [
         {
-            date: '2/18',
-            title: '出發日 臺北 -> 米蘭',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'14:10',
-                    title: '桃園機場第二航廈',
-                    detail: '搭乘新加坡航空 SQ877 飛往 新加坡樟宜機場',
-                    url: ''
-                },
-                {
-                    time:'18:55',
-                    title: '新加坡樟宜機場',
-                    detail: '轉搭新加坡航空 SQ378 飛往 米蘭馬爾彭薩機場',
-                    url: ''
-                },
-            ]
+          order_no: "",
+          day: "2026年2月19日(星期四) 開始 3 宿",
+          room_type: "整間公寓",
+          user: "3",
+        },
+      ],
+      amount: "497.6 歐元",
+    },
+    {
+      name: "Federica House",
+      address: "",
+      tel: "",
+      google_map: "",
+      room: [
+        {
+          order_no: "",
+          day: "2026年2月22日(星期日) 開始 4 宿",
+          room_type: "整間公寓",
+          user: "3",
+        },
+      ],
+      amount: "760.95 歐元",
+    },
+    {
+      name: "JustKey Guest House",
+      address: "",
+      tel: "",
+      google_map: "",
+      room: [
+        {
+          order_no: "",
+          day: "2026年2月26日(星期四) 開始 2 宿",
+          room_type: "整間公寓",
+          user: "3",
+        },
+      ],
+      amount: "170 歐元",
+    },
+    {
+      name: "Francesca Romana House",
+      address: "",
+      tel: "",
+      google_map: "",
+      room: [
+        {
+          order_no: "",
+          day: "2026年2月28日(星期六) 開始 4 宿",
+          room_type: "整間公寓",
+          user: "3",
+        },
+      ],
+      amount: "690.67 歐元",
+    },
+    {
+      name: "Holiday Rent House",
+      address: "",
+      tel: "",
+      google_map: "",
+      room: [
+        {
+          order_no: "",
+          day: "2026年3月4日(星期三) 開始 3 宿",
+          room_type: "整間公寓",
+          user: "3",
+        },
+      ],
+      amount: "496.47 歐元",
+    },
+  ],
+  cost: {
+    list: [],
+  },
+  journey: [
+    {
+      date: "2/18",
+      title: "出發日 臺北 -> 米蘭",
+      pay: [],
+      log: [
+        {
+          time: "14:10",
+          title: "桃園機場第二航廈",
+          detail: "搭乘新加坡航空 SQ877 飛往 新加坡樟宜機場",
+          url: "",
         },
         {
-            date: '2/19',
-            title: '移動日 米蘭 -> 威尼斯',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '抵達米蘭馬爾彭薩機場',
-                    detail: '去程 SQ378 2/19 06:20 抵達 米蘭馬爾彭薩機場',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: '米蘭馬爾彭薩機場',
-                    detail: '搭乘巴士至米蘭中央車站',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: '威尼斯',
-                    detail: '搭乘鐵路至威尼斯',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: 'Check in Ca Viola e Tobia by Venicevillas',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time:'',
-                    title: '宿 Ca Viola e Tobia by Venicevillas',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "18:55",
+          title: "新加坡樟宜機場",
+          detail: "轉搭新加坡航空 SQ378 飛往 米蘭馬爾彭薩機場",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "2/19",
+      title: "移動日 米蘭 -> 威尼斯",
+      pay: [
+        "米蘭馬爾彭薩機場至米蘭中央車站巴士 10歐元",
+        "italo高速鐵路 米蘭中央車站至威尼斯 Santa Lucia 車站 22歐元",
+        "ACTV 72小時交通票 45歐元",
+      ],
+      log: [
+        {
+          time: "",
+          title: "抵達米蘭馬爾彭薩機場",
+          detail: "去程 SQ378 2/19 06:20 抵達 米蘭馬爾彭薩機場",
+          url: "",
         },
         {
-            date: '2/20',
-            title: '威尼斯',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Ca Viola e Tobia by Venicevillas',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "07:30",
+          title: "米蘭馬爾彭薩機場",
+          detail: "搭乘巴士至米蘭中央車站",
+          url: "",
         },
         {
-            date: '2/21',
-            title: '威尼斯',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Ca Viola e Tobia by Venicevillas',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "09:00",
+          title: "米蘭中央車站(Milano Centrale)",
+          detail: "搭乘italo高速鐵路 11:35-->14:03 至威尼斯 Santa Lucia 車站",
+          url: "",
         },
         {
-            date: '2/22',
-            title: '移動日 威尼斯 -> 佛羅倫斯',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Federica House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "14:03",
+          title: "威尼斯 Santa Lucia 車站(Venezia Santa Lucia)",
+          detail: "",
+          url: "",
         },
         {
-            date: '2/23',
-            title: '佛羅倫斯',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Federica House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "渡船碼頭 Ferrovia",
+          detail: "Ferrovia A => Zitelle (Boat) Line 2, Line N",
+          url: "",
         },
         {
-            date: '2/24',
-            title: '佛羅倫斯',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Federica House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "渡船碼頭 Zitelle",
+          detail: "步行至 Ca Viola e Tobia by Venicevillas",
+          url: "",
         },
         {
-            date: '2/25',
-            title: '佛羅倫斯',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Federica House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "午餐",
+          detail: "",
+          url: "",
         },
         {
-            date: '2/26',
-            title: '移動日 佛羅倫斯 -> 比薩 -> 拉斯佩齊亞',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 JustKey Guest House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "Check in Ca Viola e Tobia by Venicevillas",
+          detail: "",
+          url: "",
         },
         {
-            date: '2/27',
-            title: '五漁村',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 JustKey Guest House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "渡船碼頭 Zitelle",
+          detail: "Zitelle => S. Giorgio (Boat) Line 2, Line N",
+          url: "",
         },
         {
-            date: '2/28',
-            title: '移動日 拉斯佩齊亞 -> 羅馬',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Francesca Romana House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "聖喬治島 San Giorgio Maggiore",
+          detail: "參觀 聖喬治教堂 Chiesa di San Giorgio Maggiore",
+          url: "",
         },
         {
-            date: '3/1',
-            title: '羅馬',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Francesca Romana House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "渡船碼頭 San Giorgio",
+          detail: "返回 Ca Viola e Tobia by Venicevillas",
+          url: "",
         },
         {
-            date: '3/2',
-            title: '羅馬',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Francesca Romana House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "晚餐",
+          detail: "",
+          url: "",
         },
         {
-            date: '3/3',
-            title: '羅馬',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Francesca Romana House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "宿 Ca Viola e Tobia by Venicevillas",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "2/20",
+      title: "威尼斯(主島、聖馬可廣場、總督宮)",
+      pay: [
+        "聖馬可大教堂 Basilica di San Marco 門票 5歐元",
+        "總督宮 Palazzo Ducale 門票 28歐元",
+        "聖馬可鐘樓 Campanile di San Marco 門票 10歐元",
+      ],
+      log: [
+        {
+          time: "",
+          title: "早餐",
+          detail: "自理",
+          url: "",
         },
         {
-            date: '3/4',
-            title: '移動日 羅馬->米蘭',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Holiday Rent House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "渡船碼頭 Zitelle",
+          detail: "Zitelle => S. Marco-San Zaccaria (Boat) Line 2, Line N",
+          url: "",
         },
         {
-            date: '3/5',
-            title: '米蘭',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Holiday Rent House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "聖馬可廣場 Piazza San Marco",
+          detail:
+            "參觀 聖馬可大教堂 Basilica di San Marco、總督宮 Palazzo Ducale",
+          url: "",
         },
         {
-            date: '3/6',
-            title: '科莫湖',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: '宿 Holiday Rent House',
-                    detail: '',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "午餐",
+          detail: "",
+          url: "",
         },
         {
-            date: '3/7',
-            title: '米蘭 -> 新加坡',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'',
-                    title: 'Check out Holiday Rent House',
-                    detail: '',
-                    url: ''
-                },
-                {
-                    time:'8:00',
-                    title: '米蘭中央車站',
-                    detail: '搭乘巴士至米蘭馬爾彭薩機場',
-                    url: ''
-                },
-                {
-                    time:'12:35',
-                    title: '米蘭馬爾彭薩機場',
-                    detail: '9:00(GMT+1) 前抵達機場',
-                    url: ''
-                },
-                {
-                    time:'16:20',
-                    title: '起飛',
-                    detail: '回程 SQ355 3/7 12:35(GMT+2) 飛往 新加坡樟宜機場',
-                    url: ''
-                },
-            ]
+          time: "",
+          title: "里亞托橋 Ponte di Rialto",
+          detail: "",
+          url: "",
         },
         {
-            date: '3/8',
-            title: '新加坡 -> 臺北',
-            pay: [
-            ],
-            log: [
-                {
-                    time:'7:30',
-                    title: '抵達新加坡樟宜機場',
-                    detail: '回程 SQ355 3/8 07:30(GMT+8) 抵達 新加坡樟宜機場',
-                    url: ''
-                },
-                {
-                    time:'16:20',
-                    title: '賦歸',
-                    detail: '回程 SQ878 3/8 16:20(GMT+8) 抵達 桃園機場第一航廈',
-                    url: ''
-                },
-            ]
-        }
-    ]
-}
-export default Record
+          time: "",
+          title: "鐘樓 Campanile di San Marco",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "渡船碼頭 S. Marco-San Zaccaria",
+          detail: "S. Marco-San Zaccaria => Zitelle (Boat) Line 2, Line N",
+          url: "",
+        },
+        {
+          time: "",
+          title: "晚餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "宿 Ca Viola e Tobia by Venicevillas",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "2/21",
+      title: "威尼斯(玻璃島、彩色島、教堂島)",
+      pay: [],
+      log: [
+        {
+          time: "",
+          title: "早餐",
+          detail: "自理",
+          url: "",
+        },
+        {
+          time: "",
+          title: "渡船碼頭 Zitelle",
+          detail: "Zitelle => Murano Colonna (Boat) Line 4.1",
+          url: "",
+        },
+        {
+          time: "",
+          title: "玻璃島 Murano",
+          detail:
+            "參觀 玻璃工廠 Museo del Vetro、聖瑪麗亞與聖多納托教堂 Basilica dei Santi Maria e Donato",
+          url: "",
+        },
+        {
+          time: "",
+          title: "午餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "渡船碼頭 Murano Museo",
+          detail: "Murano Museo => Torcello (Boat) Line 12",
+          url: "",
+        },
+        {
+          time: "",
+          title: "教堂島 Torcello",
+          detail: "參觀 聖母升天堂教堂 Basilica di Santa Maria Assunta",
+          url: "",
+        },
+        {
+          time: "",
+          title: "渡船碼頭 Torcello",
+          detail: "Torcello => Burano (Boat) Line 12",
+          url: "",
+        },
+        {
+          time: "",
+          title: "彩色島 Burano",
+          detail: "參觀 彩色島",
+          url: "",
+        },
+        {
+          time: "",
+          title: "渡船碼頭 Burano",
+          detail: "Burano => Zitelle (Boat) Line 12, Line 4.1",
+          url: "",
+        },
+        {
+          time: "",
+          title: "晚餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "宿 Ca Viola e Tobia by Venicevillas",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "2/22",
+      title: "移動日 威尼斯 -> 佛羅倫斯",
+      pay: [
+        "italo高速鐵路 威尼斯 Santa Lucia 車站至佛羅倫斯 Santa Maria Novella 車站 29.9歐元",
+      ],
+      log: [
+        {
+          time: "",
+          title: "早餐",
+          detail: "自理",
+          url: "",
+        },
+        {
+          time: "",
+          title: "Check out Ca Viola e Tobia by Venicevillas",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "11:00",
+          title: "威尼斯 Santa Lucia 車站(Venezia Santa Lucia)",
+          detail:
+            "搭乘italo高速鐵路 12:05-->14:20 至佛羅倫斯 Santa Maria Novella 車站",
+          url: "",
+        },
+        {
+          time: "14:20",
+          title:
+            "佛羅倫斯 Santa Maria Novella 車站(Florence Santa Maria Novella)",
+          detail: "步行至 Federica House",
+          url: "",
+        },
+        {
+          time: "",
+          title: "Check in Federica House",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "中央市場 Mercato Centrale",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "晚餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "宿 Federica House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "2/23",
+      title: "佛羅倫斯(聖母百花大教堂、領主廣場、老橋、學院美術館)",
+      pay: ["聖母百花大教堂 Cattedrale di Santa Maria del Fiore 套票 30歐元"],
+      log: [
+        {
+          time: "",
+          title: "早餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "學院美術館",
+          detail: "參觀 大衛像 David",
+          url: "",
+        },
+        {
+          time: "",
+          title: "聖母百花大教堂 Cattedrale di Santa Maria del Fiore",
+          detail: "參觀 聖母百花大教堂、喬托鐘樓、洗禮堂",
+          url: "",
+        },
+        {
+          time: "",
+          title: "午餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "領主廣場 Piazza della Signoria",
+          detail:
+            "參觀 共和國雕像、海神噴泉、維納斯誕生噴泉、佛羅倫斯市政廳 Palazzo Vecchio",
+          url: "",
+        },
+        {
+          time: "",
+          title: "老橋 Ponte Vecchio",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "米開朗基羅廣場 Piazzale Michelangelo",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "宿 Federica House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "2/24",
+      title: "佛羅倫斯(烏菲茲美術館、美第奇宮、聖母大教堂)",
+      pay: ["烏菲茲美術館 Galleria degli Uffizi 套票 58歐元"],
+      log: [
+        {
+          time: "",
+          title: "早餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "新聖母大殿 Basilica di Santa Maria Novella",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "美第奇宮 Palazzo Medici Riccardi",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "聖十字聖殿 Basilica di Santa Croce",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "午餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "烏菲茲美術館 Galleria degli Uffizi",
+          detail: "",
+          url: "",
+        },
+        {
+            time: "",
+            title: "晚餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "宿 Federica House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "2/25",
+      title: "佛羅倫斯",
+      pay: [],
+      log: [
+        {
+          time: "",
+          title: "宿 Federica House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "2/26",
+      title: "移動日 佛羅倫斯 -> 比薩 -> 拉斯佩齊亞",
+      pay: [],
+      log: [
+        {
+            time: "",
+            title: "早餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "Check out Federica House",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "佛羅倫斯 Santa Maria Novella 車站",
+          detail:
+            "搭乘Trenitalia鐵路 09:50-->10:25 至比薩中央車站 Pisa Centrale",
+          url: "",
+        },
+        {
+            time: "",
+            title: "比薩中央車站 Pisa Centrale",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "比薩斜塔 Torre Pendente di Pisa",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "午餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "比薩中央車站 Pisa Centrale",
+          detail:
+            "搭乘Trenitalia鐵路 14:34-->15:30 至拉斯佩齊亞車站 La Spezia Centrale",
+          url: "",
+        },
+        {
+            time: "",
+            title: "拉斯佩齊亞車站 La Spezia Centrale",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "Check in JustKey Guest House",
+          detail: "",
+          url: "",
+        },
+        {
+            time: "",
+            title: "晚餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "宿 JustKey Guest House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "2/27",
+      title: "五漁村",
+      pay: [
+        "五漁村一日券 14.8歐元",
+      ],
+      log: [
+        {
+            time: "",
+            title: "早餐",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "五漁村",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "午餐",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "返回拉斯佩齊亞",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "晚餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "宿 JustKey Guest House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "2/28",
+      title: "移動日 拉斯佩齊亞 -> 羅馬",
+      pay: [],
+      log: [
+        {
+            time: "",
+            title: "早餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "Check out JustKey Guest House",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "拉斯佩齊亞車站",
+          detail: "搭乘Trenitalia鐵路08:16-->12:03至羅馬 Termini 車站",
+          url: "",
+        },
+        {
+          time: "",
+          title: "羅馬 Termini 車站",
+          detail: "",
+          url: "",
+        },
+        {
+            time: "",
+            title: "午餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "Check in Francesca Romana House",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "晚餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "宿 Francesca Romana House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "3/1",
+      title: "羅馬(萬神殿、特雷維噴泉、西班牙廣場)",
+      pay: [
+        "萬神殿 Pantheon 門票 5歐元",
+      ],
+      log: [
+        {
+          time: "",
+          title: "早餐",
+          detail: "",
+          url: "",
+        },
+        {
+            time: "",
+            title: "特雷維噴泉 Fontana di Trevi",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "萬神殿 Pantheon",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "午餐",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "西班牙廣場 Piazza di Spagna",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "晚餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "宿 Francesca Romana House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "3/2",
+      title: "羅馬(梵諦岡、聖彼得大教堂)",
+      pay: [
+        "梵諦岡博物館 Musei Vaticani + 西斯汀禮拜堂 Cappella Sistina 門票 30歐元",
+      ],
+      log: [
+        {
+          time: "",
+          title: "早餐",
+          detail: "",
+          url: "",
+        },
+        {
+            time: "",
+            title: "聖彼得大教堂 Basilica di San Pietro",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "午餐",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "梵諦岡博物館 Musei Vaticani",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "晚餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "宿 Francesca Romana House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "3/3",
+      title: "羅馬(古羅馬競技場、羅馬廣場、真理之口)",
+      pay: [],
+      log: [
+        {
+          time: "",
+          title: "早餐",
+          detail: "",
+          url: "",
+        },
+        {
+            time: "",
+            title: "古羅馬競技場 Colosseo",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "羅馬廣場 Foro Romano",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "午餐",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "真理之口 Bocca della Verità",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "晚餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "宿 Francesca Romana House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "3/4",
+      title: "移動日 羅馬->米蘭",
+      pay: [],
+      log: [
+        {
+          time: "",
+          title: "早餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "Check out Francesca Romana House",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "午餐",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "",
+          title: "羅馬 Termini 車站(Roma Termini)",
+          detail: "搭乘italo高速鐵路 12:10->15:15 至米蘭中央車站",
+          url: "",
+        },
+        {
+            time: "",
+            title: "米蘭中央車站(Milano Centrale)",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "Check in Holiday Rent House",
+          detail: "",
+          url: "",
+        },
+        {
+            time: "",
+            title: "晚餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "宿 Holiday Rent House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "3/5",
+      title: "米蘭(米蘭大教堂、史福爾札城堡)",
+      pay: [
+        "米蘭大教堂 Duomo di Milano 套票 15歐元",
+        "史福爾札城堡 Castello Sforzesco 門票 10歐元",
+      ],
+      log: [
+        {
+            time: "",
+            title: "早餐",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "米蘭大教堂 Duomo di Milano",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "午餐",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "史福爾札城堡 Castello Sforzesco",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "晚餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "宿 Holiday Rent House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "3/6",
+      title: "科莫湖",
+      pay: [
+        "科莫湖船票 單程4.5歐元 x 2",
+      ],
+      log: [
+        {
+            time: "",
+            title: "早餐",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "科莫湖 Lago di Como",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "午餐",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "返回米蘭",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "晚餐",
+            detail: "",
+            url: "",
+        }, 
+        {
+          time: "",
+          title: "宿 Holiday Rent House",
+          detail: "",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "3/7",
+      title: "米蘭 -> 新加坡",
+      pay: [],
+      log: [
+        {
+            time: "",
+            title: "早餐",
+            detail: "",
+            url: "",
+        },
+        {
+          time: "",
+          title: "Check out Holiday Rent House",
+          detail: "",
+          url: "",
+        },
+        {
+          time: "8:00",
+          title: "米蘭中央車站",
+          detail: "搭乘巴士至米蘭馬爾彭薩機場",
+          url: "",
+        },
+        {
+          time: "12:35",
+          title: "米蘭馬爾彭薩機場",
+          detail: "9:00(GMT+1) 前抵達機場",
+          url: "",
+        },
+        {
+          time: "16:20",
+          title: "起飛",
+          detail: "回程 SQ355 3/7 12:35(GMT+2) 飛往 新加坡樟宜機場",
+          url: "",
+        },
+      ],
+    },
+    {
+      date: "3/8",
+      title: "新加坡 -> 臺北",
+      pay: [],
+      log: [
+        {
+          time: "7:30",
+          title: "抵達新加坡樟宜機場",
+          detail: "回程 SQ355 3/8 07:30(GMT+8) 抵達 新加坡樟宜機場",
+          url: "",
+        },
+        {
+          time: "16:20",
+          title: "賦歸",
+          detail: "回程 SQ878 3/8 16:20(GMT+8) 抵達 桃園機場第一航廈",
+          url: "",
+        },
+      ],
+    },
+  ],
+};
+export default Record;
