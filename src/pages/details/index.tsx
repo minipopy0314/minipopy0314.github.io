@@ -1,7 +1,9 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 
 import { Button, Divider, Grid, Typography } from "@mui/material";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import {Helmet} from "react-helmet";
 
 import AirplaneInfo from "./AirplaneInfo";
@@ -30,9 +32,32 @@ import data202505 from '../records/202505-japan'
 
 import data202405 from '../records/202405-swiss'
 import data202602 from '../records/202602-italy'
+import { KeyboardArrowLeft } from "@mui/icons-material";
 
 const index = () => {
   const params = useParams()
+  const [showTopButton, setShowTopButton] = useState(false);
+
+  const scrollToJourney = (journeyIndex: number) => {
+    const target = document.getElementById(`journey-day-${journeyIndex}`);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopButton(window.scrollY > 100);
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   let inputData = null;
   switch(params.time){
@@ -120,6 +145,26 @@ const index = () => {
           <Typography variant="h6" marginTop={3} align="center">{inputData.location}</Typography>
         </Grid>
         <Grid item xs={12}>
+          <Typography variant="h6" marginTop={10} marginBottom={3} align="center">快速索引</Typography>
+          {
+            inputData.journey && inputData.journey.length > 0 && (
+              <Grid container spacing={1} justifyContent="center" marginBottom={4}>
+                {inputData.journey.map((day, i) => (
+                  <Grid item key={`journey-jump-${i}`}>
+                    <Button 
+                      variant="outlined"
+                      size="small"
+                      onClick={() => scrollToJourney(i)}
+                    >
+                      {day.date} {day.title}
+                    </Button>
+                  </Grid>
+                ))}
+              </Grid>
+            )
+          }
+        </Grid>
+        <Grid item xs={12}>
           <Typography variant="h4" marginTop={10} align="center">機票</Typography>
           {
             inputData.flight &&
@@ -155,12 +200,32 @@ const index = () => {
             inputData.journey &&
             inputData.journey.map((day, i) => {
               return(
-                <JourneyInfo key={`journey${i}`} day={day} />
+                <JourneyInfo key={`journey${i}`} day={day} id={`journey-day-${i}`} />
               )
             })
           }
         </Grid>
       </Grid>
+      {showTopButton && (
+        <>
+          <Button
+            variant="contained"
+            onClick={() => { window.location.href = '/'; }}
+            style={{ position: 'fixed', left: '20px', bottom: '20px', zIndex: 1000 }}
+          >
+            <KeyboardArrowLeft />
+            {/* 返回 */}
+          </Button>
+          <Button
+            variant="contained"
+            onClick={scrollToTop}
+            style={{ position: 'fixed', right: '20px', bottom: '20px', zIndex: 1000 }}
+          >
+            <KeyboardArrowUpIcon />
+            回到最上
+          </Button>
+        </>
+      )}
     </>
   );
 };

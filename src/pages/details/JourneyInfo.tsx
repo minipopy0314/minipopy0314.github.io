@@ -14,9 +14,9 @@ const DayLog = ({ item }) => {
     )
 }
 
-const JourneyInfo = ({ day }) => {
+const JourneyInfo = ({ day, id }) => {
     return (
-        <Grid item xs={12}>
+        <Grid item xs={12} id={id}>
             <Typography variant="h2">{day.date}</Typography>
             <Typography variant="h5" marginTop={5}>{day.title}</Typography>
             <Divider />
