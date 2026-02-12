@@ -64,27 +64,12 @@ const Record = {
       room: [
         {
           order_no: "",
-          day: "2026年2月22日(星期日) 開始 4 宿",
+          day: "2026年2月22日(星期日) 開始 6 宿",
           room_type: "整間公寓",
           user: "3",
         },
       ],
-      amount: "760.95 歐元",
-    },
-    {
-      name: "JustKey Guest House",
-      address: "",
-      tel: "",
-      google_map: "",
-      room: [
-        {
-          order_no: "",
-          day: "2026年2月26日(星期四) 開始 2 宿",
-          room_type: "整間公寓",
-          user: "3",
-        },
-      ],
-      amount: "170 歐元",
+      amount: "1,187.35 歐元",
     },
     {
       name: "Francesca Romana House",
@@ -554,7 +539,7 @@ const Record = {
     },
     {
       date: "2/26",
-      title: "移動日 佛羅倫斯 -> 比薩 -> 拉斯佩齊亞",
+      title: "比薩(比薩斜塔、奇蹟廣場)",
       pay: [],
       log: [
         {
@@ -565,7 +550,7 @@ const Record = {
         },
         {
           time: "",
-          title: "Check out Federica House",
+          title: "早餐",
           detail: "",
           url: "",
         },
@@ -598,20 +583,14 @@ const Record = {
           time: "",
           title: "比薩中央車站 Pisa Centrale",
           detail:
-            "搭乘Trenitalia鐵路 14:34-->15:30 至拉斯佩齊亞車站 La Spezia Centrale",
+            "",
           url: "",
         },
         {
             time: "",
-            title: "拉斯佩齊亞車站 La Spezia Centrale",
+            title: "佛羅倫斯 Santa Maria Novella 車站",
             detail: "",
             url: "",
-        },
-        {
-          time: "",
-          title: "Check in JustKey Guest House",
-          detail: "",
-          url: "",
         },
         {
             time: "",
@@ -621,7 +600,7 @@ const Record = {
         },
         {
           time: "",
-          title: "宿 JustKey Guest House",
+          title: "宿 Federica House",
           detail: "",
           url: "",
         },
@@ -629,9 +608,9 @@ const Record = {
     },
     {
       date: "2/27",
-      title: "五漁村",
+      title: "波隆納一日遊(波隆納大學、雙塔)",
       pay: [
-        "五漁村一日券 14.8歐元",
+        "",
       ],
       log: [
         {
@@ -642,7 +621,19 @@ const Record = {
         },
         {
             time: "",
-            title: "五漁村",
+            title: "佛羅倫斯 Santa Maria Novella 車站",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "波隆納中央車站 Bologna Centrale",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "博洛尼亞主廣場、聖佩托尼奧教堂、海神噴泉",
             detail: "",
             url: "",
         },
@@ -654,7 +645,19 @@ const Record = {
         },
         {
             time: "",
-            title: "返回拉斯佩齊亞",
+            title: "雙塔 Due Torri",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "波隆納中央車站 Bologna Centrale",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "佛羅倫斯 Santa Maria Novella 車站",
             detail: "",
             url: "",
         },
@@ -666,7 +669,7 @@ const Record = {
         },
         {
           time: "",
-          title: "宿 JustKey Guest House",
+          title: "宿 Federica House",
           detail: "",
           url: "",
         },
@@ -674,7 +677,7 @@ const Record = {
     },
     {
       date: "2/28",
-      title: "移動日 拉斯佩齊亞 -> 羅馬",
+      title: "移動日 佛羅倫斯 -> 羅馬",
       pay: [],
       log: [
         {
@@ -685,14 +688,14 @@ const Record = {
         },
         {
           time: "",
-          title: "Check out JustKey Guest House",
+          title: "Check out Federica House",
           detail: "",
           url: "",
         },
         {
           time: "",
-          title: "拉斯佩齊亞車站",
-          detail: "搭乘Trenitalia鐵路08:16-->12:03至羅馬 Termini 車站",
+          title: "佛羅倫斯 Santa Maria Novella 車站",
+          detail: "搭乘italo至羅馬 Termini 車站",
           url: "",
         },
         {
@@ -729,7 +732,7 @@ const Record = {
     },
     {
       date: "3/1",
-      title: "羅馬(萬神殿、特雷維噴泉、西班牙廣場)",
+      title: "羅馬(萬神殿、特雷維噴泉、納沃納廣場)",
       pay: [
         "萬神殿 Pantheon 門票 5歐元",
       ],
@@ -743,6 +746,12 @@ const Record = {
         {
             time: "",
             title: "特雷維噴泉 Fontana di Trevi",
+            detail: "可以吃網紅冰淇淋",
+            url: "",
+        },
+        {
+            time: "",
+            title: "哈德良神廟 Tempio di Adriano、聖依納爵堂 Chiesa di Sant'Ignazio di Loyola",
             detail: "",
             url: "",
         },
@@ -755,12 +764,24 @@ const Record = {
         {
             time: "",
             title: "午餐",
+            detail: "喝一下金杯咖啡休息",
+            url: "",
+        },
+        {
+            time: "",
+            title: "納沃納廣場 Piazza Navona",
             detail: "",
             url: "",
         },
         {
             time: "",
-            title: "西班牙廣場 Piazza di Spagna",
+            title: "聖依搦斯蒙難堂 Chiesa di Sant'Ignazio di Loyola",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "聖天使堡 Castel Sant'Angelo",
             detail: "",
             url: "",
         },
@@ -780,7 +801,7 @@ const Record = {
     },
     {
       date: "3/2",
-      title: "羅馬(梵諦岡、聖彼得大教堂)",
+      title: "羅馬(梵諦岡、聖彼得大教堂、西班牙廣場)",
       pay: [
         "梵諦岡博物館 Musei Vaticani + 西斯汀禮拜堂 Cappella Sistina 門票 30歐元",
       ],
@@ -806,6 +827,12 @@ const Record = {
         {
             time: "",
             title: "梵諦岡博物館 Musei Vaticani",
+            detail: "",
+            url: "",
+        },
+        {
+            time: "",
+            title: "西班牙廣場 Piazza di Spagna",
             detail: "",
             url: "",
         },
