@@ -29,6 +29,7 @@ import data202402 from '../records/202402-kyushu'
 import data202501 from '../records/202501-japan'
 import data202502 from '../records/202502-japan'
 import data202505 from '../records/202505-japan'
+import data202611 from '../records/202611-japan'
 
 import data202405 from '../records/202405-swiss'
 import data202602 from '../records/202602-italy'
@@ -120,6 +121,9 @@ const index = () => {
       break;
     case '202602-italy':
       inputData = data202602;
+      break;
+    case '202611-japan':
+      inputData = data202611;
       break;
   }
 
