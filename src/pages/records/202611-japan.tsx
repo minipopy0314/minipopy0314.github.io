@@ -23,41 +23,53 @@ const Record = {
         },
     ],
     lodging: [
-        // {
-        //     name: '長野東急REI飯店',
-        //     address: '1-28-3 Minamichitose 長野 日本 380-0823',
-        //     tel: '+81 262231090',
-        //     google_map: '',
-        //     room: [
-        //         {
-        //             order_no: '',
-        //             day: '2',
-        //             room_type: '高級三人房',
-        //             user: '3'
-        //         }
-        //     ],
-        //     amount: '26,745日圓(實收 6,169 + 93 新台幣)'
-        // },
-        // {
-        //     name: '上野御徒町曼迪高級飯店',
-        //     address: 'Taito-ku, Taito 3-41-7 東京 日本 110-0016',
-        //     tel: '+81 358168681',
-        //     google_map: '',
-        //     room: [
-        //         {
-        //             order_no: '',
-        //             day: '4',
-        //             room_type: '豪華兩床房+加床',
-        //             user: '3'
-        //         }
-        //     ],
-        //     amount: '39,444日圓(實收 8,886 + 133 新台幣)'
-        // },
+        {
+            name: 'Yumoto Fujiya Hotel',
+            address: '256-1 Yumoto, Hakone, Ashigarashimo District, Kanagawa 250-0392 日本',
+            tel: '+81 460-85-6111',
+            google_map: '',
+            room: [
+                {
+                    order_no: '',
+                    day: '1',
+                    room_type: '隨機雙床房',
+                    user: '2'
+                },
+                {
+                    order_no: '',
+                    day: '1',
+                    room_type: '隨機雙床房',
+                    user: '2'
+                }
+            ],
+            amount: '74,037日圓(實收 新台幣)'
+        },
+        {
+            name: 'Almont Hotel Nippori',
+            address: '5 Chome-47-1 Higashinippori, Arakawa City, Tokyo 116-0014 日本',
+            tel: '+81 3-5615-3431',
+            google_map: '',
+            room: [
+                {
+                    order_no: '',
+                    day: '3',
+                    room_type: '雙床房',
+                    user: '2'
+                },
+                {
+                    order_no: '',
+                    day: '3',
+                    room_type: '雙床房',
+                    user: '2'
+                }
+            ],
+            amount: '182,696日圓(實收 新台幣)'
+        },
     ],
     cost: {
         list: [
-            'Skyliner來回＋東京地下鐵三日券 4100日圓/人',
-            '箱根三日周遊券 7,400日圓/人',
+            'Skyliner來回＋東京地下鐵三日券 6100日圓/人',
+            '箱根2日周遊券 7,100日圓/人',
             '浪漫特快來回(新宿=箱根湯本) 2,400日圓/人',
             'SHIBUYA SKY入場券 3,400日圓/人',
             '輕井澤來回新幹線車票(北陸新幹線) 10,780日圓/人',
@@ -132,13 +144,13 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: 'Check IN ',
+                    title: 'Check IN Yumoto Fujiya Hotel',
                     detail: '',
                     url: ''
                 },
                 {
                     time: '',
-                    title: '宿 ',
+                    title: '宿 Yumoto Fujiya Hotel',
                     detail: '',
                     url: ''
                 },
@@ -211,13 +223,13 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: 'Check IN ',
+                    title: 'Check IN Almont Hotel Nippori',
                     detail: '',
                     url: ''
                 },
                 {
                     time: '',
-                    title: '宿',
+                    title: '宿 Almont Hotel Nippori',
                     detail: '',
                     url: ''
                 },
@@ -277,7 +289,7 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: '宿 ',
+                    title: '宿 Almont Hotel Nippori',
                     detail: '',
                     url: ''
                 },
@@ -373,7 +385,7 @@ const Record = {
                 },
                 {
                     time: '',
-                    title: '宿 ',
+                    title: '宿 Almont Hotel Nippori',
                     detail: '',
                     url: ''
                 },
